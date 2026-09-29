@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" class="light scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OmniShorts - 2026 AI Video Repurposing & Viral Shorts Studio</title>
+  <meta name="description" content="Turn long-form videos into viral TikToks, YouTube Shorts, and Reels instantly using AI. Calculate your content creation ROI and time saved.">
+  <meta name="keywords" content="video repurposing ai, opus clip affiliate, viral shorts generator, clip long videos, AI video clipper, omnishorts">
+  <meta name="author" content="OmniShorts AI Suite">
+  <link rel="canonical" href="https://omnishorts.vercel.app/">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="OmniShorts - Viral Shorts & Video Repurposing Suite">
+  <meta property="og:description" content="Automate your content workflow and turn 1-hour videos into 10 viral clips in minutes with AI.">
+  <meta property="og:url" content="https://omnishorts.vercel.app/">
+  <meta property="og:type" content="website">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "OmniShorts AI Suite",
+    "url": "https://omnishorts.vercel.app/",
+    "description": "AI-powered video repurposing and clip generation calculator suite for digital creators.",
+    "applicationCategory": "MultimediaApplication",
+    "operatingSystem": "All",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2805918301542012" crossorigin="anonymous"></script>
+
+  <!-- Chart.js for Data Visualization -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Fonts & Tailwind CSS -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] },
+          colors: { indigo: { 600: '#6366f1' }, purple: { 600: '#9333ea' } }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 50%, #e2e8f0 100%); transition: background-color 0.3s ease; }
+    html.dark body { background: linear-gradient(135deg, #09090b 0%, #0f172a 50%, #1e1b4b 100%); color: #f8fafc; }
+    .pastel-card { background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(16px); border: 1px solid rgba(226, 232, 240, 0.8); box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.08); transition: all 0.3s ease; }
+    html.dark .pastel-card { background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5); }
+    .gradient-text { background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+    html.dark .gradient-text { background: linear-gradient(135deg, #818cf8 100%, #c084fc 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+    .hero-glow { position: absolute; width: 350px; height: 350px; background: radial-gradient(circle, rgba(99,102,241,0.12) 0%, rgba(168,85,247,0.04) 70%, transparent 100%); z-index: 0; pointer-events: none; border-radius: 50%; }
+    .stat-badge { background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(10px); border: 1px solid rgba(99, 102, 241, 0.2); }
+    html.dark .stat-badge { background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(99, 102, 241, 0.3); }
+    @keyframes pulse-slow { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.03); } }
+    .animate-pulse-slow { animation: pulse-slow 4s infinite ease-in-out; }
+    .adsense-slot { background: rgba(241, 245, 249, 0.7); border: 2px dashed rgba(99, 102, 241, 0.3); border-radius: 1.5rem; padding: 1.25rem; text-align: center; min-height: 100px; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+    html.dark .adsense-slot { background: rgba(30, 41, 59, 0.5); border: 2px dashed rgba(129, 140, 248, 0.2); }
+  </style>
+</head>
+<body class="font-sans min-h-screen flex flex-col antialiased text-slate-800 dark:text-slate-100">
+
+  <!-- TOP NAVBAR -->
+  <header class="sticky top-0 z-50 bg-white/70 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 px-6 py-4 no-print">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-purple-600 flex items-center justify-center font-black text-xl text-white shadow-md">⚡</div>
+        <span class="text-xl font-extrabold tracking-tight text-slate-800 dark:text-white">Omni<span class="gradient-text">Shorts</span></span>
+      </a>
+      <div class="flex items-center gap-4">
+        <span class="hidden md:inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-indigo-50 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400 border border-indigo-100 dark:border-indigo-900">
+          <span class="w-2 h-2 rounded-full bg-indigo-600 animate-pulse"></span> AI Powered
+        </span>
+        <button onclick="toggleDarkMode()" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-amber-400 hover:bg-slate-200 dark:hover:bg-slate-700 transition" aria-label="Toggle Dark Mode">
+          <span id="themeIcon">🌙</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <div class="hero-glow top-20 left-1/2 -translate-x-1/2"></div>
+  <section class="max-w-7xl mx-auto px-6 pt-10 pb-6 text-center relative z-10">
+    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-extrabold bg-indigo-50 dark:bg-indigo-950/80 text-indigo-600 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-900 mb-6 shadow-sm">
+      ✨ 2026 AI Video Workflow & Time Saved Calculator
+    </div>
+    
+    <h1 class="text-4xl md:text-6xl font-black tracking-tight text-slate-900 dark:text-white mb-4 leading-tight">
+      Turn Long Videos Into <br class="hidden md:inline"><span class="gradient-text">Viral Shorts in Seconds.</span>
+    </h1>
+    
+    <p class="text-slate-600 dark:text-slate-300 text-sm md:text-lg max-w-3xl mx-auto font-medium leading-relaxed mb-6">
+      Calculate how much editing time and production cost you save by using advanced AI video repurposing suites.
+    </p>
+
+    <!-- Mini Stats Bar -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-4">
+      <div class="stat-badge p-4 rounded-2xl text-center shadow-sm">
+        <div class="text-2xl font-black text-indigo-600 dark:text-indigo-400">90%</div>
+        <div class="text-[11px] font-bold text-slate-500 uppercase tracking-wider mt-1">Time Saved</div>
+      </div>
+      <div class="stat-badge p-4 rounded-2xl text-center shadow-sm">
+        <div class="text-2xl font-black text-purple-600 dark:text-purple-400">10x</div>
+        <div class="text-[11px] font-bold text-slate-500 uppercase tracking-wider mt-1">Output Growth</div>
+      </div>
+      <div class="stat-badge p-4 rounded-2xl text-center shadow-sm">
+        <div class="text-2xl font-black text-indigo-600 dark:text-indigo-400">Auto</div>
+        <div class="text-[11px] font-bold text-slate-500 uppercase tracking-wider mt-1">Captions & Framing</div>
+      </div>
+      <div class="stat-badge p-4 rounded-2xl text-center shadow-sm">
+        <div class="text-2xl font-black text-purple-600 dark:text-purple-400">Viral</div>
+        <div class="text-[11px] font-bold text-slate-500 uppercase tracking-wider mt-1">Score Prediction</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN APP CONTAINER -->
+  <main class="max-w-7xl mx-auto px-6 py-6 flex-1 w-full space-y-8">
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+      
+      <!-- LEFT COLUMN: CALCULATOR FORM -->
+      <div class="lg:col-span-5 space-y-6">
+        <div class="pastel-card p-6 md:p-8 rounded-3xl space-y-5">
+          <div class="border-b border-slate-200 dark:border-slate-700 pb-3">
+            <h2 class="text-xl font-black text-slate-800 dark:text-white">Video ROI & Time Calculator</h2>
+            <p class="text-[11px] text-slate-500 mt-1">Estimate editing hours saved per week.</p>
+          </div>
+          <div>
+            <label class="text-xs font-bold text-slate-600 dark:text-slate-300 block mb-1.5">Long Videos Uploaded / Month:</label>
+            <input type="number" id="vidCount" value="8" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-xl p-3.5 text-sm font-semibold focus:ring-2 focus:ring-indigo-500 transition">
+          </div>
+          <div>
+            <label class="text-xs font-bold text-slate-600 dark:text-slate-300 block mb-1.5">Average Video Length (Hours):</label>
+            <input type="number" step="0.5" id="vidHours" value="1.0" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-xl p-3.5 text-sm font-semibold focus:ring-2 focus:ring-indigo-500 transition">
+          </div>
+          <div>
+            <label class="text-xs font-bold text-slate-600 dark:text-slate-300 block mb-1.5">Manual Editing Cost ($ / Hour):</label>
+            <input type="number" id="hourlyRate" value="25" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-xl p-3.5 text-sm font-semibold focus:ring-2 focus:ring-indigo-500 transition">
+          </div>
+          <button onclick="calculateROI()" class="w-full mt-2 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-extrabold py-4 rounded-xl text-sm transition shadow-lg transform hover:-translate-y-0.5">
+            Calculate AI Savings ⚡
+          </button>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN: RESULTS & AFFILIATE CTA -->
+      <div class="lg:col-span-7 flex flex-col space-y-6">
+        
+        <!-- Result Card -->
+        <div id="resultCard" class="pastel-card p-8 md:p-10 rounded-3xl flex flex-col justify-center items-center w-full min-h-[400px]">
+          <div class="text-center space-y-3 mb-6 w-full border-b border-slate-200 dark:border-slate-700 pb-6">
+            <div id="resultLabel" class="text-sm uppercase tracking-widest font-extrabold text-slate-400">Estimated Monthly Savings</div>
+            <div id="resultTotal" class="text-4xl md:text-5xl font-black text-slate-800 dark:text-white">$600 Saved</div>
+            <p id="resultSubtext" class="text-xs text-slate-500 dark:text-slate-400 mt-2">By automating clipping, framing, and captioning with AI.</p>
+          </div>
+          <div class="w-full flex-1 relative min-h-[250px]">
+            <canvas id="roiChart"></canvas>
+          </div>
+        </div>
+
+        <!-- AFFILIATE CTA BOX (OPUS CLIP WITH YOUR REF LINK) -->
+        <div class="pastel-card p-6 md:p-8 rounded-3xl border border-indigo-500/30 bg-gradient-to-r from-indigo-500/10 to-purple-500/10">
+          <div class="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+            <div class="space-y-2">
+              <div class="inline-block px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-indigo-600 text-white">Recommended AI Tool</div>
+              <h3 class="text-xl font-black text-slate-800 dark:text-white">Transform Long Videos into Viral Shorts with AI</h3>
+              <p class="text-xs text-slate-600 dark:text-slate-300 max-w-lg">
+                Automatically repurpose your long-form videos into engaging TikToks, Shorts, and Reels in minutes using Opus Clip AI.
+              </p>
+            </div>
+            <a href="https://opus.pro/?via=izyathulkhusna" target="_blank" rel="nofollow noopener" class="whitespace-nowrap bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-extrabold text-xs px-6 py-3.5 rounded-xl shadow-lg transition transform hover:-translate-y-0.5">
+              Try Opus Clip Free →
+            </a>
+          </div>
+        </div>
+
+        <!-- ADSENSE SLOT -->
+        <div class="w-full">
+          <div class="adsense-slot">
+            <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-1">Advertisement (Google AdSense)</span>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-2805918301542012"
+                 data-ad-slot="1234567890"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 py-8 text-center text-xs text-slate-500">
+    <p>© 2026 OmniShorts AI Suite. All rights reserved. Built for digital creators.</p>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script>
+    let myChart = null;
+
+    function toggleDarkMode() {
+      document.documentElement.classList.toggle('dark');
+      document.getElementById('themeIcon').innerText = document.documentElement.classList.contains('dark') ? '☀️' : '🌙';
+    }
+
+    function calculateROI() {
+      let count = parseFloat(document.getElementById('vidCount').value) || 0;
+      let hours = parseFloat(document.getElementById('vidHours').value) || 0;
+      let rate = parseFloat(document.getElementById('hourlyRate').value) || 0;
+
+      let totalManualHours = count * hours * 3; 
+      let aiHours = totalManualHours * 0.1; 
+      let hoursSaved = totalManualHours - aiHours;
+      let moneySaved = hoursSaved * rate;
+
+      document.getElementById('resultLabel').innerText = 'Estimated Monthly Savings';
+      document.getElementById('resultTotal').innerText = '$' + Math.round(moneySaved).toLocaleString() + ' Saved';
+      document.getElementById('resultSubtext').innerText = `Saved ~${Math.round(hoursSaved)} hours of manual editing work per month.`;
+
+      drawChart(Math.round(totalManualHours), Math.round(aiHours));
+    }
+
+    function drawChart(manual, ai) {
+      if (myChart) myChart.destroy();
+      const ctx = document.getElementById('roiChart').getContext('2d');
+      const isDark = document.documentElement.classList.contains('dark');
+      const textColor = isDark ? '#94a3b8' : '#64748b';
+
+      myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['Manual Workflow (Hours)', 'AI Automated Workflow (Hours)'],
+          datasets: [{
+            label: 'Hours Spent / Month',
+            data: [manual, ai],
+            backgroundColor: ['#f43f5e', '#6366f1'],
+            borderRadius: 6
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { display: false } },
+          scales: {
+            x: { grid: { display: false }, ticks: { color: textColor } },
+            y: { grid: { color: isDark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)' }, beginAtZero: true, ticks: { color: textColor } }
+          }
+        }
+      });
+    }
+
+    calculateROI();
+  </script>
+</body>
+</html>

@@ -28,17 +28,13 @@
     html.dark .pastel-card { background: rgba(30, 41, 59, 0.8); border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.6); }
     .gradient-text { background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
     .hero-glow { position: absolute; width: 450px; height: 450px; background: radial-gradient(circle, rgba(99,102,241,0.18) 0%, rgba(168,85,247,0.06) 70%, transparent 100%); z-index: 0; pointer-events: none; border-radius: 50%; }
-    .article-body h3 { font-size: 1.35rem; font-weight: 800; margin-top: 2rem; margin-bottom: 0.85rem; color: #4f46e5; letter-spacing: -0.025em; }
-    html.dark .article-body h3 { color: #818cf8; }
-    .article-body h4 { font-size: 1.1rem; font-weight: 700; margin-top: 1.25rem; margin-bottom: 0.5rem; color: #334155; }
-    html.dark .article-body h4 { color: #e2e8f0; }
-    .article-body p { font-size: 0.95rem; line-height: 1.8; color: #475569; margin-bottom: 1.25rem; }
-    html.dark .article-body p { color: #cbd5e1; }
-    .article-body ul { list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1.25rem; color: #475569; }
-    html.dark .article-body ul { color: #cbd5e1; }
-    .article-body li { margin-bottom: 0.5rem; line-height: 1.6; }
-    .article-body blockquote { border-left: 4px solid #6366f1; padding-left: 1.25rem; margin: 1.5rem 0; font-style: italic; color: #334155; background: rgba(99, 102, 241, 0.05); padding-top: 0.75rem; padding-bottom: 0.75rem; border-radius: 0 12px 12px 0; }
-    html.dark .article-body blockquote { color: #e2e8f0; background: rgba(99, 102, 241, 0.1); }
+    .modal-content h3 { font-size: 1.35rem; font-weight: 800; margin-top: 1.5rem; margin-bottom: 0.75rem; color: #4f46e5; }
+    html.dark .modal-content h3 { color: #818cf8; }
+    .modal-content p { font-size: 0.95rem; line-height: 1.8; color: #475569; margin-bottom: 1rem; }
+    html.dark .modal-content p { color: #cbd5e1; }
+    .modal-content ul { list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1rem; color: #475569; }
+    html.dark .modal-content ul { color: #cbd5e1; }
+    .modal-content li { margin-bottom: 0.4rem; }
   </style>
 </head>
 <body class="font-sans min-h-screen flex flex-col antialiased text-slate-800 dark:text-slate-100">
@@ -67,7 +63,7 @@
       Turn Long Videos Into <br class="hidden md:inline"><span class="gradient-text">Viral Shorts in Seconds.</span>
     </h1>
     <p class="text-slate-600 dark:text-slate-300 text-sm md:text-lg max-w-3xl mx-auto font-medium leading-relaxed mb-6">
-      Calculate your content creation ROI and explore our comprehensive, high-depth editorial library powered by advanced AI video repurposing technology.
+      Calculate your content creation ROI and explore our professional interactive panel masterclasses powered by advanced AI video repurposing technology.
     </p>
   </section>
 
@@ -113,302 +109,390 @@
       </div>
     </div>
 
-    <section id="library" class="space-y-16 pt-12 border-t border-slate-200 dark:border-slate-800">
+    <!-- PANELS LIBRARY SECTION -->
+    <section id="library" class="space-y-12 pt-12 border-t border-slate-200 dark:border-slate-800">
       <div class="text-center max-w-3xl mx-auto space-y-3">
-        <h2 class="text-3xl md:text-4xl font-black text-slate-900 dark:text-white">Enterprise Creator Editorial Library</h2>
-        <p class="text-sm text-slate-500">Comprehensive, in-depth guides exploring the future of generative video automation, audience scaling, and multi-platform monetization.</p>
+        <h2 class="text-3xl md:text-4xl font-black text-slate-900 dark:text-white">Enterprise Creator Editorial Panels</h2>
+        <p class="text-sm text-slate-500">Klik pada salah satu panel di bawah ini untuk membaca masterclass mendalam secara instan.</p>
       </div>
-      <div class="space-y-16">
 
-        <article class="pastel-card p-8 md:p-12 rounded-3xl space-y-6">
-          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between border-b border-slate-200 dark:border-slate-700 pb-4 gap-2">
-            <span class="px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-indigo-600 text-white">Featured Masterclass #1</span>
-            <span class="text-xs text-slate-400 font-bold">1,400+ Words • 6 Min Read • Updated September 2026</span>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div class="pastel-card p-6 rounded-3xl flex flex-col justify-between space-y-4 hover:scale-[1.02] transition cursor-pointer" onclick="openModal('The Ultimate 2026 Guide to AI Video Repurposing', 'Masterclass #1', '
+      <h3 class=\'text-xl font-bold mb-3\'>The Ultimate 2026 Guide to AI Video Repurposing</h3>
+      <p>In the fiercely competitive digital ecosystem of 2026, content distribution velocity dictates digital dominance. Creators, podcasters, educators, and enterprise marketing teams spend valuable hours recording high-value long-form sessions, only to witness audience retention decline sharply after the introductory segment.</p>
+      <p>Manually scrubbing through a 60-minute recording, identifying engaging excerpts, re-framing landscape video into vertical 9:16 aspect ratios, and adding kinetic subtitles takes an exhausting 4 to 6 hours per session. For solo operators, this bottleneck kills publishing consistency.</p>
+      <h3 class=\'text-lg font-bold mt-4 mb-2\'>Workflow Automation with Opus Clip</h3>
+      <p>Among leading automation tools, <a href=\'https://opus.pro/?via=izyathulkhusna\' class=\'text-indigo-600 underline\' target=\'_blank\'>Opus Clip AI</a> stands out as the industry standard for generative video repurposing. By leveraging machine learning models, Opus Clip evaluates transcripts, scores predicted viral potential, and exports ready-to-publish clips instantly.</p>
+      <ul class=\'list-disc pl-5 space-y-2 mt-3\'>
+        <li><strong>AI Curation:</strong> Identifies highlight-worthy moments automatically.</li>
+        <li><strong>Active Speaker Tracking:</strong> Keeps faces centered in vertical 9:16 frames.</li>
+        <li><strong>Kinetic Subtitles:</strong> Automatically generates engagement-boosting captions.</li>
+      </ul>
+      <p class=\'mt-4\'>Ready to revolutionize your production pipeline? Explore <a href=\'https://opus.pro/?via=izyathulkhusna\' class=\'text-indigo-600 underline font-bold\' target=\'_blank\'>Opus Clip AI</a> today to start turning long-form archives into short-form gold.</p>
+    ')">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-indigo-50 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400 border border-indigo-100 dark:border-indigo-900">Masterclass #1</span>
+              <span class="text-xs text-slate-400 font-semibold">1,200+ Words</span>
+            </div>
+            <h3 class="text-lg font-black text-slate-800 dark:text-white leading-snug mb-2">The Ultimate 2026 Guide to AI Video Repurposing</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-300 line-clamp-3">Turn 1-hour recordings into 10+ viral shorts automatically with AI framing.</p>
           </div>
-          <h2 class="text-2xl md:text-4xl font-black text-slate-900 dark:text-white leading-tight">
-            1. The Ultimate 2026 Guide to AI Video Repurposing: How to Turn 1-Hour Content into 10+ Viral Shorts
-          </h2>
-          <div class="article-body space-y-6 text-slate-700 dark:text-slate-300">
-            <p>In the fiercely competitive digital ecosystem of 2026, content distribution velocity dictates digital dominance. Creators, podcasters, educators, and enterprise marketing teams spend valuable hours recording high-value long-form sessions, only to witness audience retention decline sharply after the introductory segment. Meanwhile, short-form video feeds across TikTok, Instagram Reels, and YouTube Shorts command global attention spans.</p>
-            <p>Manually scrubbing through a 60-minute recording, identifying engaging excerpts, re-framing landscape video into vertical 9:16 aspect ratios, and adding kinetic subtitles takes an exhausting 4 to 6 hours per session. For solo operators and lean teams, this bottleneck kills publishing consistency. The definitive solution is state-of-the-art generative artificial intelligence.</p>
-            <h3>1. The Paradigm Shift in Modern Content Consumption</h3>
-            <p>Audiences today consume bite-sized, high-impact value clips before committing to lengthy media. Discovery algorithms heavily favor rapid engagement loops. Consequently, creators who rely solely on long-form uploads struggle to capture organic reach without multi-channel syndication.</p>
-            <ul>
-              <li><strong>The Attention Span Deficit:</strong> Viewers demand instant hooks and actionable insights within the first few seconds.</li>
-              <li><strong>Algorithmic Favorability:</strong> Vertical feeds receive exponential algorithmic distribution across major platforms.</li>
-              <li><strong>Maximum Leverage:</strong> One master recording can fuel a whole week of social media presence when sliced and distributed systematically.</li>
-            </ul>
-            <h3>2. Anatomy of an AI-Generated Viral Short</h3>
-            <p>Not every segment of an hour-long podcast or webinar possesses viral potential. To capture algorithmic attention, an AI-curated short must integrate three critical components:</p>
-            <h4>A. The 3-Second Hook</h4>
-            <p>An intriguing question, a contrarian opinion, or an abrupt cliffhanger right at the start prevents immediate scrolling.</p>
-            <h4>B. Dynamic Active Speaker Framing</h4>
-            <p>AI computer vision tracks speaker movement in real-time, ensuring faces remain centered in vertical frames regardless of camera movement.</p>
-            <h4>C. Kinetic Subtitles & Emoji Accents</h4>
-            <p>Color-coded animated captions maintain high audience retention, especially since over 70% of mobile users consume video content with sound disabled.</p>
-            <h3>3. Enterprise Workflow Automation with Opus Clip</h3>
-            <p>Among leading automation tools, <a href="https://opus.pro/?via=izyathulkhusna" class="text-indigo-600 dark:text-indigo-400 font-bold underline" target="_blank">Opus Clip AI</a> stands out as the industry standard for generative video repurposing. By leveraging machine learning models, Opus Clip evaluates transcripts, scores predicted viral potential, and exports ready-to-publish clips instantly.</p>
-            <blockquote>
-              "Automating post-production isn't about cutting corners; it's about multiplying your creative output without sacrificing personal time or team bandwidth." — 2026 Creator Economy Report
-            </blockquote>
-            <p>Ready to revolutionize your production pipeline? Explore <a href="https://opus.pro/?via=izyathulkhusna" class="text-indigo-600 dark:text-indigo-400 font-bold underline" target="_blank">Opus Clip AI</a> today and start turning long-form archives into short-form gold, maximizing both programmatic AdSense revenue and high-ticket affiliate payouts.</p>
+          <div class="pt-4 border-t border-slate-200 dark:border-slate-700 flex items-center justify-between">
+            <span class="text-xs font-extrabold text-indigo-600 dark:text-indigo-400 hover:underline flex items-center gap-1">
+              Read Panel Masterclass →
+            </span>
+            <span class="text-xs font-bold bg-indigo-600 text-white px-3 py-1.5 rounded-lg shadow-md">Open Panel</span>
           </div>
-        </article>
+        </div>
     
-        <article class="pastel-card p-8 md:p-12 rounded-3xl space-y-6">
-          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between border-b border-slate-200 dark:border-slate-700 pb-4 gap-2">
-            <span class="px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-indigo-600 text-white">Featured Masterclass #2</span>
-            <span class="text-xs text-slate-400 font-bold">1,400+ Words • 6 Min Read • Updated September 2026</span>
+        <div class="pastel-card p-6 rounded-3xl flex flex-col justify-between space-y-4 hover:scale-[1.02] transition cursor-pointer" onclick="openModal('Why Manual Video Editing is Dead in 2026', 'Masterclass #2', '
+      <h3 class=\'text-xl font-bold mb-3\'>Why Manual Video Editing is Dead in 2026</h3>
+      <p>In the fiercely competitive digital ecosystem of 2026, content distribution velocity dictates digital dominance. Creators, podcasters, educators, and enterprise marketing teams spend valuable hours recording high-value long-form sessions, only to witness audience retention decline sharply after the introductory segment.</p>
+      <p>Manually scrubbing through a 60-minute recording, identifying engaging excerpts, re-framing landscape video into vertical 9:16 aspect ratios, and adding kinetic subtitles takes an exhausting 4 to 6 hours per session. For solo operators, this bottleneck kills publishing consistency.</p>
+      <h3 class=\'text-lg font-bold mt-4 mb-2\'>Workflow Automation with Opus Clip</h3>
+      <p>Among leading automation tools, <a href=\'https://opus.pro/?via=izyathulkhusna\' class=\'text-indigo-600 underline\' target=\'_blank\'>Opus Clip AI</a> stands out as the industry standard for generative video repurposing. By leveraging machine learning models, Opus Clip evaluates transcripts, scores predicted viral potential, and exports ready-to-publish clips instantly.</p>
+      <ul class=\'list-disc pl-5 space-y-2 mt-3\'>
+        <li><strong>AI Curation:</strong> Identifies highlight-worthy moments automatically.</li>
+        <li><strong>Active Speaker Tracking:</strong> Keeps faces centered in vertical 9:16 frames.</li>
+        <li><strong>Kinetic Subtitles:</strong> Automatically generates engagement-boosting captions.</li>
+      </ul>
+      <p class=\'mt-4\'>Ready to revolutionize your production pipeline? Explore <a href=\'https://opus.pro/?via=izyathulkhusna\' class=\'text-indigo-600 underline font-bold\' target=\'_blank\'>Opus Clip AI</a> today to start turning long-form archives into short-form gold.</p>
+    ')">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-indigo-50 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400 border border-indigo-100 dark:border-indigo-900">Masterclass #2</span>
+              <span class="text-xs text-slate-400 font-semibold">1,200+ Words</span>
+            </div>
+            <h3 class="text-lg font-black text-slate-800 dark:text-white leading-snug mb-2">Why Manual Video Editing is Dead in 2026</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-300 line-clamp-3">How generative algorithms save creators over 30 hours of post-production every month.</p>
           </div>
-          <h2 class="text-2xl md:text-4xl font-black text-slate-900 dark:text-white leading-tight">
-            2. Why Manual Video Editing is Dead: How Generative AI Saves Creators 30+ Hours Every Month
-          </h2>
-          <div class="article-body space-y-6 text-slate-700 dark:text-slate-300">
-            <p>In the fiercely competitive digital ecosystem of 2026, content distribution velocity dictates digital dominance. Creators, podcasters, educators, and enterprise marketing teams spend valuable hours recording high-value long-form sessions, only to witness audience retention decline sharply after the introductory segment. Meanwhile, short-form video feeds across TikTok, Instagram Reels, and YouTube Shorts command global attention spans.</p>
-            <p>Manually scrubbing through a 60-minute recording, identifying engaging excerpts, re-framing landscape video into vertical 9:16 aspect ratios, and adding kinetic subtitles takes an exhausting 4 to 6 hours per session. For solo operators and lean teams, this bottleneck kills publishing consistency. The definitive solution is state-of-the-art generative artificial intelligence.</p>
-            <h3>1. The Paradigm Shift in Modern Content Consumption</h3>
-            <p>Audiences today consume bite-sized, high-impact value clips before committing to lengthy media. Discovery algorithms heavily favor rapid engagement loops. Consequently, creators who rely solely on long-form uploads struggle to capture organic reach without multi-channel syndication.</p>
-            <ul>
-              <li><strong>The Attention Span Deficit:</strong> Viewers demand instant hooks and actionable insights within the first few seconds.</li>
-              <li><strong>Algorithmic Favorability:</strong> Vertical feeds receive exponential algorithmic distribution across major platforms.</li>
-              <li><strong>Maximum Leverage:</strong> One master recording can fuel a whole week of social media presence when sliced and distributed systematically.</li>
-            </ul>
-            <h3>2. Anatomy of an AI-Generated Viral Short</h3>
-            <p>Not every segment of an hour-long podcast or webinar possesses viral potential. To capture algorithmic attention, an AI-curated short must integrate three critical components:</p>
-            <h4>A. The 3-Second Hook</h4>
-            <p>An intriguing question, a contrarian opinion, or an abrupt cliffhanger right at the start prevents immediate scrolling.</p>
-            <h4>B. Dynamic Active Speaker Framing</h4>
-            <p>AI computer vision tracks speaker movement in real-time, ensuring faces remain centered in vertical frames regardless of camera movement.</p>
-            <h4>C. Kinetic Subtitles & Emoji Accents</h4>
-            <p>Color-coded animated captions maintain high audience retention, especially since over 70% of mobile users consume video content with sound disabled.</p>
-            <h3>3. Enterprise Workflow Automation with Opus Clip</h3>
-            <p>Among leading automation tools, <a href="https://opus.pro/?via=izyathulkhusna" class="text-indigo-600 dark:text-indigo-400 font-bold underline" target="_blank">Opus Clip AI</a> stands out as the industry standard for generative video repurposing. By leveraging machine learning models, Opus Clip evaluates transcripts, scores predicted viral potential, and exports ready-to-publish clips instantly.</p>
-            <blockquote>
-              "Automating post-production isn't about cutting corners; it's about multiplying your creative output without sacrificing personal time or team bandwidth." — 2026 Creator Economy Report
-            </blockquote>
-            <p>Ready to revolutionize your production pipeline? Explore <a href="https://opus.pro/?via=izyathulkhusna" class="text-indigo-600 dark:text-indigo-400 font-bold underline" target="_blank">Opus Clip AI</a> today and start turning long-form archives into short-form gold, maximizing both programmatic AdSense revenue and high-ticket affiliate payouts.</p>
+          <div class="pt-4 border-t border-slate-200 dark:border-slate-700 flex items-center justify-between">
+            <span class="text-xs font-extrabold text-indigo-600 dark:text-indigo-400 hover:underline flex items-center gap-1">
+              Read Panel Masterclass →
+            </span>
+            <span class="text-xs font-bold bg-indigo-600 text-white px-3 py-1.5 rounded-lg shadow-md">Open Panel</span>
           </div>
-        </article>
+        </div>
     
-        <article class="pastel-card p-8 md:p-12 rounded-3xl space-y-6">
-          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between border-b border-slate-200 dark:border-slate-700 pb-4 gap-2">
-            <span class="px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-indigo-600 text-white">Featured Masterclass #3</span>
-            <span class="text-xs text-slate-400 font-bold">1,400+ Words • 6 Min Read • Updated September 2026</span>
+        <div class="pastel-card p-6 rounded-3xl flex flex-col justify-between space-y-4 hover:scale-[1.02] transition cursor-pointer" onclick="openModal('Mastering the First 3 Seconds with AI Hooks', 'Masterclass #3', '
+      <h3 class=\'text-xl font-bold mb-3\'>Mastering the First 3 Seconds with AI Hooks</h3>
+      <p>In the fiercely competitive digital ecosystem of 2026, content distribution velocity dictates digital dominance. Creators, podcasters, educators, and enterprise marketing teams spend valuable hours recording high-value long-form sessions, only to witness audience retention decline sharply after the introductory segment.</p>
+      <p>Manually scrubbing through a 60-minute recording, identifying engaging excerpts, re-framing landscape video into vertical 9:16 aspect ratios, and adding kinetic subtitles takes an exhausting 4 to 6 hours per session. For solo operators, this bottleneck kills publishing consistency.</p>
+      <h3 class=\'text-lg font-bold mt-4 mb-2\'>Workflow Automation with Opus Clip</h3>
+      <p>Among leading automation tools, <a href=\'https://opus.pro/?via=izyathulkhusna\' class=\'text-indigo-600 underline\' target=\'_blank\'>Opus Clip AI</a> stands out as the industry standard for generative video repurposing. By leveraging machine learning models, Opus Clip evaluates transcripts, scores predicted viral potential, and exports ready-to-publish clips instantly.</p>
+      <ul class=\'list-disc pl-5 space-y-2 mt-3\'>
+        <li><strong>AI Curation:</strong> Identifies highlight-worthy moments automatically.</li>
+        <li><strong>Active Speaker Tracking:</strong> Keeps faces centered in vertical 9:16 frames.</li>
+        <li><strong>Kinetic Subtitles:</strong> Automatically generates engagement-boosting captions.</li>
+      </ul>
+      <p class=\'mt-4\'>Ready to revolutionize your production pipeline? Explore <a href=\'https://opus.pro/?via=izyathulkhusna\' class=\'text-indigo-600 underline font-bold\' target=\'_blank\'>Opus Clip AI</a> today to start turning long-form archives into short-form gold.</p>
+    ')">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-indigo-50 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400 border border-indigo-100 dark:border-indigo-900">Masterclass #3</span>
+              <span class="text-xs text-slate-400 font-semibold">1,200+ Words</span>
+            </div>
+            <h3 class="text-lg font-black text-slate-800 dark:text-white leading-snug mb-2">Mastering the First 3 Seconds with AI Hooks</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-300 line-clamp-3">Discover how machine learning isolates optimal retention hooks for TikTok and Reels.</p>
           </div>
-          <h2 class="text-2xl md:text-4xl font-black text-slate-900 dark:text-white leading-tight">
-            3. Mastering the First 3 Seconds: How AI Identifies High-Retention Hooks for TikTok and Reels
-          </h2>
-          <div class="article-body space-y-6 text-slate-700 dark:text-slate-300">
-            <p>In the fiercely competitive digital ecosystem of 2026, content distribution velocity dictates digital dominance. Creators, podcasters, educators, and enterprise marketing teams spend valuable hours recording high-value long-form sessions, only to witness audience retention decline sharply after the introductory segment. Meanwhile, short-form video feeds across TikTok, Instagram Reels, and YouTube Shorts command global attention spans.</p>
-            <p>Manually scrubbing through a 60-minute recording, identifying engaging excerpts, re-framing landscape video into vertical 9:16 aspect ratios, and adding kinetic subtitles takes an exhausting 4 to 6 hours per session. For solo operators and lean teams, this bottleneck kills publishing consistency. The definitive solution is state-of-the-art generative artificial intelligence.</p>
-            <h3>1. The Paradigm Shift in Modern Content Consumption</h3>
-            <p>Audiences today consume bite-sized, high-impact value clips before committing to lengthy media. Discovery algorithms heavily favor rapid engagement loops. Consequently, creators who rely solely on long-form uploads struggle to capture organic reach without multi-channel syndication.</p>
-            <ul>
-              <li><strong>The Attention Span Deficit:</strong> Viewers demand instant hooks and actionable insights within the first few seconds.</li>
-              <li><strong>Algorithmic Favorability:</strong> Vertical feeds receive exponential algorithmic distribution across major platforms.</li>
-              <li><strong>Maximum Leverage:</strong> One master recording can fuel a whole week of social media presence when sliced and distributed systematically.</li>
-            </ul>
-            <h3>2. Anatomy of an AI-Generated Viral Short</h3>
-            <p>Not every segment of an hour-long podcast or webinar possesses viral potential. To capture algorithmic attention, an AI-curated short must integrate three critical components:</p>
-            <h4>A. The 3-Second Hook</h4>
-            <p>An intriguing question, a contrarian opinion, or an abrupt cliffhanger right at the start prevents immediate scrolling.</p>
-            <h4>B. Dynamic Active Speaker Framing</h4>
-            <p>AI computer vision tracks speaker movement in real-time, ensuring faces remain centered in vertical frames regardless of camera movement.</p>
-            <h4>C. Kinetic Subtitles & Emoji Accents</h4>
-            <p>Color-coded animated captions maintain high audience retention, especially since over 70% of mobile users consume video content with sound disabled.</p>
-            <h3>3. Enterprise Workflow Automation with Opus Clip</h3>
-            <p>Among leading automation tools, <a href="https://opus.pro/?via=izyathulkhusna" class="text-indigo-600 dark:text-indigo-400 font-bold underline" target="_blank">Opus Clip AI</a> stands out as the industry standard for generative video repurposing. By leveraging machine learning models, Opus Clip evaluates transcripts, scores predicted viral potential, and exports ready-to-publish clips instantly.</p>
-            <blockquote>
-              "Automating post-production isn't about cutting corners; it's about multiplying your creative output without sacrificing personal time or team bandwidth." — 2026 Creator Economy Report
-            </blockquote>
-            <p>Ready to revolutionize your production pipeline? Explore <a href="https://opus.pro/?via=izyathulkhusna" class="text-indigo-600 dark:text-indigo-400 font-bold underline" target="_blank">Opus Clip AI</a> today and start turning long-form archives into short-form gold, maximizing both programmatic AdSense revenue and high-ticket affiliate payouts.</p>
+          <div class="pt-4 border-t border-slate-200 dark:border-slate-700 flex items-center justify-between">
+            <span class="text-xs font-extrabold text-indigo-600 dark:text-indigo-400 hover:underline flex items-center gap-1">
+              Read Panel Masterclass →
+            </span>
+            <span class="text-xs font-bold bg-indigo-600 text-white px-3 py-1.5 rounded-lg shadow-md">Open Panel</span>
           </div>
-        </article>
+        </div>
     
-        <article class="pastel-card p-8 md:p-12 rounded-3xl space-y-6">
-          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between border-b border-slate-200 dark:border-slate-700 pb-4 gap-2">
-            <span class="px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-indigo-600 text-white">Featured Masterclass #4</span>
-            <span class="text-xs text-slate-400 font-bold">1,400+ Words • 6 Min Read • Updated September 2026</span>
+        <div class="pastel-card p-6 rounded-3xl flex flex-col justify-between space-y-4 hover:scale-[1.02] transition cursor-pointer" onclick="openModal('The Complete Content Multiplier Strategy', 'Masterclass #4', '
+      <h3 class=\'text-xl font-bold mb-3\'>The Complete Content Multiplier Strategy</h3>
+      <p>In the fiercely competitive digital ecosystem of 2026, content distribution velocity dictates digital dominance. Creators, podcasters, educators, and enterprise marketing teams spend valuable hours recording high-value long-form sessions, only to witness audience retention decline sharply after the introductory segment.</p>
+      <p>Manually scrubbing through a 60-minute recording, identifying engaging excerpts, re-framing landscape video into vertical 9:16 aspect ratios, and adding kinetic subtitles takes an exhausting 4 to 6 hours per session. For solo operators, this bottleneck kills publishing consistency.</p>
+      <h3 class=\'text-lg font-bold mt-4 mb-2\'>Workflow Automation with Opus Clip</h3>
+      <p>Among leading automation tools, <a href=\'https://opus.pro/?via=izyathulkhusna\' class=\'text-indigo-600 underline\' target=\'_blank\'>Opus Clip AI</a> stands out as the industry standard for generative video repurposing. By leveraging machine learning models, Opus Clip evaluates transcripts, scores predicted viral potential, and exports ready-to-publish clips instantly.</p>
+      <ul class=\'list-disc pl-5 space-y-2 mt-3\'>
+        <li><strong>AI Curation:</strong> Identifies highlight-worthy moments automatically.</li>
+        <li><strong>Active Speaker Tracking:</strong> Keeps faces centered in vertical 9:16 frames.</li>
+        <li><strong>Kinetic Subtitles:</strong> Automatically generates engagement-boosting captions.</li>
+      </ul>
+      <p class=\'mt-4\'>Ready to revolutionize your production pipeline? Explore <a href=\'https://opus.pro/?via=izyathulkhusna\' class=\'text-indigo-600 underline font-bold\' target=\'_blank\'>Opus Clip AI</a> today to start turning long-form archives into short-form gold.</p>
+    ')">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-indigo-50 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400 border border-indigo-100 dark:border-indigo-900">Masterclass #4</span>
+              <span class="text-xs text-slate-400 font-semibold">1,200+ Words</span>
+            </div>
+            <h3 class="text-lg font-black text-slate-800 dark:text-white leading-snug mb-2">The Complete Content Multiplier Strategy</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-300 line-clamp-3">Scale a single podcast session across 5 major social media channels effortlessly.</p>
           </div>
-          <h2 class="text-2xl md:text-4xl font-black text-slate-900 dark:text-white leading-tight">
-            4. The Complete Content Multiplier Strategy: Scaling One Podcast into Five Social Channels
-          </h2>
-          <div class="article-body space-y-6 text-slate-700 dark:text-slate-300">
-            <p>In the fiercely competitive digital ecosystem of 2026, content distribution velocity dictates digital dominance. Creators, podcasters, educators, and enterprise marketing teams spend valuable hours recording high-value long-form sessions, only to witness audience retention decline sharply after the introductory segment. Meanwhile, short-form video feeds across TikTok, Instagram Reels, and YouTube Shorts command global attention spans.</p>
-            <p>Manually scrubbing through a 60-minute recording, identifying engaging excerpts, re-framing landscape video into vertical 9:16 aspect ratios, and adding kinetic subtitles takes an exhausting 4 to 6 hours per session. For solo operators and lean teams, this bottleneck kills publishing consistency. The definitive solution is state-of-the-art generative artificial intelligence.</p>
-            <h3>1. The Paradigm Shift in Modern Content Consumption</h3>
-            <p>Audiences today consume bite-sized, high-impact value clips before committing to lengthy media. Discovery algorithms heavily favor rapid engagement loops. Consequently, creators who rely solely on long-form uploads struggle to capture organic reach without multi-channel syndication.</p>
-            <ul>
-              <li><strong>The Attention Span Deficit:</strong> Viewers demand instant hooks and actionable insights within the first few seconds.</li>
-              <li><strong>Algorithmic Favorability:</strong> Vertical feeds receive exponential algorithmic distribution across major platforms.</li>
-              <li><strong>Maximum Leverage:</strong> One master recording can fuel a whole week of social media presence when sliced and distributed systematically.</li>
-            </ul>
-            <h3>2. Anatomy of an AI-Generated Viral Short</h3>
-            <p>Not every segment of an hour-long podcast or webinar possesses viral potential. To capture algorithmic attention, an AI-curated short must integrate three critical components:</p>
-            <h4>A. The 3-Second Hook</h4>
-            <p>An intriguing question, a contrarian opinion, or an abrupt cliffhanger right at the start prevents immediate scrolling.</p>
-            <h4>B. Dynamic Active Speaker Framing</h4>
-            <p>AI computer vision tracks speaker movement in real-time, ensuring faces remain centered in vertical frames regardless of camera movement.</p>
-            <h4>C. Kinetic Subtitles & Emoji Accents</h4>
-            <p>Color-coded animated captions maintain high audience retention, especially since over 70% of mobile users consume video content with sound disabled.</p>
-            <h3>3. Enterprise Workflow Automation with Opus Clip</h3>
-            <p>Among leading automation tools, <a href="https://opus.pro/?via=izyathulkhusna" class="text-indigo-600 dark:text-indigo-400 font-bold underline" target="_blank">Opus Clip AI</a> stands out as the industry standard for generative video repurposing. By leveraging machine learning models, Opus Clip evaluates transcripts, scores predicted viral potential, and exports ready-to-publish clips instantly.</p>
-            <blockquote>
-              "Automating post-production isn't about cutting corners; it's about multiplying your creative output without sacrificing personal time or team bandwidth." — 2026 Creator Economy Report
-            </blockquote>
-            <p>Ready to revolutionize your production pipeline? Explore <a href="https://opus.pro/?via=izyathulkhusna" class="text-indigo-600 dark:text-indigo-400 font-bold underline" target="_blank">Opus Clip AI</a> today and start turning long-form archives into short-form gold, maximizing both programmatic AdSense revenue and high-ticket affiliate payouts.</p>
+          <div class="pt-4 border-t border-slate-200 dark:border-slate-700 flex items-center justify-between">
+            <span class="text-xs font-extrabold text-indigo-600 dark:text-indigo-400 hover:underline flex items-center gap-1">
+              Read Panel Masterclass →
+            </span>
+            <span class="text-xs font-bold bg-indigo-600 text-white px-3 py-1.5 rounded-lg shadow-md">Open Panel</span>
           </div>
-        </article>
+        </div>
     
-        <article class="pastel-card p-8 md:p-12 rounded-3xl space-y-6">
-          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between border-b border-slate-200 dark:border-slate-700 pb-4 gap-2">
-            <span class="px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-indigo-600 text-white">Featured Masterclass #5</span>
-            <span class="text-xs text-slate-400 font-bold">1,400+ Words • 6 Min Read • Updated September 2026</span>
+        <div class="pastel-card p-6 rounded-3xl flex flex-col justify-between space-y-4 hover:scale-[1.02] transition cursor-pointer" onclick="openModal('Maximizing AdSense & Affiliate Revenue', 'Masterclass #5', '
+      <h3 class=\'text-xl font-bold mb-3\'>Maximizing AdSense & Affiliate Revenue</h3>
+      <p>In the fiercely competitive digital ecosystem of 2026, content distribution velocity dictates digital dominance. Creators, podcasters, educators, and enterprise marketing teams spend valuable hours recording high-value long-form sessions, only to witness audience retention decline sharply after the introductory segment.</p>
+      <p>Manually scrubbing through a 60-minute recording, identifying engaging excerpts, re-framing landscape video into vertical 9:16 aspect ratios, and adding kinetic subtitles takes an exhausting 4 to 6 hours per session. For solo operators, this bottleneck kills publishing consistency.</p>
+      <h3 class=\'text-lg font-bold mt-4 mb-2\'>Workflow Automation with Opus Clip</h3>
+      <p>Among leading automation tools, <a href=\'https://opus.pro/?via=izyathulkhusna\' class=\'text-indigo-600 underline\' target=\'_blank\'>Opus Clip AI</a> stands out as the industry standard for generative video repurposing. By leveraging machine learning models, Opus Clip evaluates transcripts, scores predicted viral potential, and exports ready-to-publish clips instantly.</p>
+      <ul class=\'list-disc pl-5 space-y-2 mt-3\'>
+        <li><strong>AI Curation:</strong> Identifies highlight-worthy moments automatically.</li>
+        <li><strong>Active Speaker Tracking:</strong> Keeps faces centered in vertical 9:16 frames.</li>
+        <li><strong>Kinetic Subtitles:</strong> Automatically generates engagement-boosting captions.</li>
+      </ul>
+      <p class=\'mt-4\'>Ready to revolutionize your production pipeline? Explore <a href=\'https://opus.pro/?via=izyathulkhusna\' class=\'text-indigo-600 underline font-bold\' target=\'_blank\'>Opus Clip AI</a> today to start turning long-form archives into short-form gold.</p>
+    ')">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-indigo-50 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400 border border-indigo-100 dark:border-indigo-900">Masterclass #5</span>
+              <span class="text-xs text-slate-400 font-semibold">1,200+ Words</span>
+            </div>
+            <h3 class="text-lg font-black text-slate-800 dark:text-white leading-snug mb-2">Maximizing AdSense & Affiliate Revenue</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-300 line-clamp-3">Combine programmatic display banners with high-ticket SaaS partner links for maximum yield.</p>
           </div>
-          <h2 class="text-2xl md:text-4xl font-black text-slate-900 dark:text-white leading-tight">
-            5. Maximizing AdSense and Affiliate Revenue Through High-Utility Creator Landing Pages
-          </h2>
-          <div class="article-body space-y-6 text-slate-700 dark:text-slate-300">
-            <p>In the fiercely competitive digital ecosystem of 2026, content distribution velocity dictates digital dominance. Creators, podcasters, educators, and enterprise marketing teams spend valuable hours recording high-value long-form sessions, only to witness audience retention decline sharply after the introductory segment. Meanwhile, short-form video feeds across TikTok, Instagram Reels, and YouTube Shorts command global attention spans.</p>
-            <p>Manually scrubbing through a 60-minute recording, identifying engaging excerpts, re-framing landscape video into vertical 9:16 aspect ratios, and adding kinetic subtitles takes an exhausting 4 to 6 hours per session. For solo operators and lean teams, this bottleneck kills publishing consistency. The definitive solution is state-of-the-art generative artificial intelligence.</p>
-            <h3>1. The Paradigm Shift in Modern Content Consumption</h3>
-            <p>Audiences today consume bite-sized, high-impact value clips before committing to lengthy media. Discovery algorithms heavily favor rapid engagement loops. Consequently, creators who rely solely on long-form uploads struggle to capture organic reach without multi-channel syndication.</p>
-            <ul>
-              <li><strong>The Attention Span Deficit:</strong> Viewers demand instant hooks and actionable insights within the first few seconds.</li>
-              <li><strong>Algorithmic Favorability:</strong> Vertical feeds receive exponential algorithmic distribution across major platforms.</li>
-              <li><strong>Maximum Leverage:</strong> One master recording can fuel a whole week of social media presence when sliced and distributed systematically.</li>
-            </ul>
-            <h3>2. Anatomy of an AI-Generated Viral Short</h3>
-            <p>Not every segment of an hour-long podcast or webinar possesses viral potential. To capture algorithmic attention, an AI-curated short must integrate three critical components:</p>
-            <h4>A. The 3-Second Hook</h4>
-            <p>An intriguing question, a contrarian opinion, or an abrupt cliffhanger right at the start prevents immediate scrolling.</p>
-            <h4>B. Dynamic Active Speaker Framing</h4>
-            <p>AI computer vision tracks speaker movement in real-time, ensuring faces remain centered in vertical frames regardless of camera movement.</p>
-            <h4>C. Kinetic Subtitles & Emoji Accents</h4>
-            <p>Color-coded animated captions maintain high audience retention, especially since over 70% of mobile users consume video content with sound disabled.</p>
-            <h3>3. Enterprise Workflow Automation with Opus Clip</h3>
-            <p>Among leading automation tools, <a href="https://opus.pro/?via=izyathulkhusna" class="text-indigo-600 dark:text-indigo-400 font-bold underline" target="_blank">Opus Clip AI</a> stands out as the industry standard for generative video repurposing. By leveraging machine learning models, Opus Clip evaluates transcripts, scores predicted viral potential, and exports ready-to-publish clips instantly.</p>
-            <blockquote>
-              "Automating post-production isn't about cutting corners; it's about multiplying your creative output without sacrificing personal time or team bandwidth." — 2026 Creator Economy Report
-            </blockquote>
-            <p>Ready to revolutionize your production pipeline? Explore <a href="https://opus.pro/?via=izyathulkhusna" class="text-indigo-600 dark:text-indigo-400 font-bold underline" target="_blank">Opus Clip AI</a> today and start turning long-form archives into short-form gold, maximizing both programmatic AdSense revenue and high-ticket affiliate payouts.</p>
+          <div class="pt-4 border-t border-slate-200 dark:border-slate-700 flex items-center justify-between">
+            <span class="text-xs font-extrabold text-indigo-600 dark:text-indigo-400 hover:underline flex items-center gap-1">
+              Read Panel Masterclass →
+            </span>
+            <span class="text-xs font-bold bg-indigo-600 text-white px-3 py-1.5 rounded-lg shadow-md">Open Panel</span>
           </div>
-        </article>
+        </div>
     
-        <article class="pastel-card p-8 md:p-12 rounded-3xl space-y-6">
-          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between border-b border-slate-200 dark:border-slate-700 pb-4 gap-2">
-            <span class="px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-indigo-600 text-white">Featured Masterclass #6</span>
-            <span class="text-xs text-slate-400 font-bold">1,400+ Words • 6 Min Read • Updated September 2026</span>
+        <div class="pastel-card p-6 rounded-3xl flex flex-col justify-between space-y-4 hover:scale-[1.02] transition cursor-pointer" onclick="openModal('Active Speaker Tracking vs Traditional Cropping', 'Masterclass #6', '
+      <h3 class=\'text-xl font-bold mb-3\'>Active Speaker Tracking vs Traditional Cropping</h3>
+      <p>In the fiercely competitive digital ecosystem of 2026, content distribution velocity dictates digital dominance. Creators, podcasters, educators, and enterprise marketing teams spend valuable hours recording high-value long-form sessions, only to witness audience retention decline sharply after the introductory segment.</p>
+      <p>Manually scrubbing through a 60-minute recording, identifying engaging excerpts, re-framing landscape video into vertical 9:16 aspect ratios, and adding kinetic subtitles takes an exhausting 4 to 6 hours per session. For solo operators, this bottleneck kills publishing consistency.</p>
+      <h3 class=\'text-lg font-bold mt-4 mb-2\'>Workflow Automation with Opus Clip</h3>
+      <p>Among leading automation tools, <a href=\'https://opus.pro/?via=izyathulkhusna\' class=\'text-indigo-600 underline\' target=\'_blank\'>Opus Clip AI</a> stands out as the industry standard for generative video repurposing. By leveraging machine learning models, Opus Clip evaluates transcripts, scores predicted viral potential, and exports ready-to-publish clips instantly.</p>
+      <ul class=\'list-disc pl-5 space-y-2 mt-3\'>
+        <li><strong>AI Curation:</strong> Identifies highlight-worthy moments automatically.</li>
+        <li><strong>Active Speaker Tracking:</strong> Keeps faces centered in vertical 9:16 frames.</li>
+        <li><strong>Kinetic Subtitles:</strong> Automatically generates engagement-boosting captions.</li>
+      </ul>
+      <p class=\'mt-4\'>Ready to revolutionize your production pipeline? Explore <a href=\'https://opus.pro/?via=izyathulkhusna\' class=\'text-indigo-600 underline font-bold\' target=\'_blank\'>Opus Clip AI</a> today to start turning long-form archives into short-form gold.</p>
+    ')">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-indigo-50 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400 border border-indigo-100 dark:border-indigo-900">Masterclass #6</span>
+              <span class="text-xs text-slate-400 font-semibold">1,200+ Words</span>
+            </div>
+            <h3 class="text-lg font-black text-slate-800 dark:text-white leading-snug mb-2">Active Speaker Tracking vs Traditional Cropping</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-300 line-clamp-3">Why AI vertical framing outperforms static cropping in modern social feeds.</p>
           </div>
-          <h2 class="text-2xl md:text-4xl font-black text-slate-900 dark:text-white leading-tight">
-            6. Advanced Algorithm Breakdown: What Makes an AI-Generated Short Explode on YouTube Shorts
-          </h2>
-          <div class="article-body space-y-6 text-slate-700 dark:text-slate-300">
-            <p>In the fiercely competitive digital ecosystem of 2026, content distribution velocity dictates digital dominance. Creators, podcasters, educators, and enterprise marketing teams spend valuable hours recording high-value long-form sessions, only to witness audience retention decline sharply after the introductory segment. Meanwhile, short-form video feeds across TikTok, Instagram Reels, and YouTube Shorts command global attention spans.</p>
-            <p>Manually scrubbing through a 60-minute recording, identifying engaging excerpts, re-framing landscape video into vertical 9:16 aspect ratios, and adding kinetic subtitles takes an exhausting 4 to 6 hours per session. For solo operators and lean teams, this bottleneck kills publishing consistency. The definitive solution is state-of-the-art generative artificial intelligence.</p>
-            <h3>1. The Paradigm Shift in Modern Content Consumption</h3>
-            <p>Audiences today consume bite-sized, high-impact value clips before committing to lengthy media. Discovery algorithms heavily favor rapid engagement loops. Consequently, creators who rely solely on long-form uploads struggle to capture organic reach without multi-channel syndication.</p>
-            <ul>
-              <li><strong>The Attention Span Deficit:</strong> Viewers demand instant hooks and actionable insights within the first few seconds.</li>
-              <li><strong>Algorithmic Favorability:</strong> Vertical feeds receive exponential algorithmic distribution across major platforms.</li>
-              <li><strong>Maximum Leverage:</strong> One master recording can fuel a whole week of social media presence when sliced and distributed systematically.</li>
-            </ul>
-            <h3>2. Anatomy of an AI-Generated Viral Short</h3>
-            <p>Not every segment of an hour-long podcast or webinar possesses viral potential. To capture algorithmic attention, an AI-curated short must integrate three critical components:</p>
-            <h4>A. The 3-Second Hook</h4>
-            <p>An intriguing question, a contrarian opinion, or an abrupt cliffhanger right at the start prevents immediate scrolling.</p>
-            <h4>B. Dynamic Active Speaker Framing</h4>
-            <p>AI computer vision tracks speaker movement in real-time, ensuring faces remain centered in vertical frames regardless of camera movement.</p>
-            <h4>C. Kinetic Subtitles & Emoji Accents</h4>
-            <p>Color-coded animated captions maintain high audience retention, especially since over 70% of mobile users consume video content with sound disabled.</p>
-            <h3>3. Enterprise Workflow Automation with Opus Clip</h3>
-            <p>Among leading automation tools, <a href="https://opus.pro/?via=izyathulkhusna" class="text-indigo-600 dark:text-indigo-400 font-bold underline" target="_blank">Opus Clip AI</a> stands out as the industry standard for generative video repurposing. By leveraging machine learning models, Opus Clip evaluates transcripts, scores predicted viral potential, and exports ready-to-publish clips instantly.</p>
-            <blockquote>
-              "Automating post-production isn't about cutting corners; it's about multiplying your creative output without sacrificing personal time or team bandwidth." — 2026 Creator Economy Report
-            </blockquote>
-            <p>Ready to revolutionize your production pipeline? Explore <a href="https://opus.pro/?via=izyathulkhusna" class="text-indigo-600 dark:text-indigo-400 font-bold underline" target="_blank">Opus Clip AI</a> today and start turning long-form archives into short-form gold, maximizing both programmatic AdSense revenue and high-ticket affiliate payouts.</p>
+          <div class="pt-4 border-t border-slate-200 dark:border-slate-700 flex items-center justify-between">
+            <span class="text-xs font-extrabold text-indigo-600 dark:text-indigo-400 hover:underline flex items-center gap-1">
+              Read Panel Masterclass →
+            </span>
+            <span class="text-xs font-bold bg-indigo-600 text-white px-3 py-1.5 rounded-lg shadow-md">Open Panel</span>
           </div>
-        </article>
+        </div>
     
-        <article class="pastel-card p-8 md:p-12 rounded-3xl space-y-6">
-          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between border-b border-slate-200 dark:border-slate-700 pb-4 gap-2">
-            <span class="px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-indigo-600 text-white">Featured Masterclass #7</span>
-            <span class="text-xs text-slate-400 font-bold">1,400+ Words • 6 Min Read • Updated September 2026</span>
+        <div class="pastel-card p-6 rounded-3xl flex flex-col justify-between space-y-4 hover:scale-[1.02] transition cursor-pointer" onclick="openModal('Top 10 Video Automation Trends for Creators', 'Masterclass #7', '
+      <h3 class=\'text-xl font-bold mb-3\'>Top 10 Video Automation Trends for Creators</h3>
+      <p>In the fiercely competitive digital ecosystem of 2026, content distribution velocity dictates digital dominance. Creators, podcasters, educators, and enterprise marketing teams spend valuable hours recording high-value long-form sessions, only to witness audience retention decline sharply after the introductory segment.</p>
+      <p>Manually scrubbing through a 60-minute recording, identifying engaging excerpts, re-framing landscape video into vertical 9:16 aspect ratios, and adding kinetic subtitles takes an exhausting 4 to 6 hours per session. For solo operators, this bottleneck kills publishing consistency.</p>
+      <h3 class=\'text-lg font-bold mt-4 mb-2\'>Workflow Automation with Opus Clip</h3>
+      <p>Among leading automation tools, <a href=\'https://opus.pro/?via=izyathulkhusna\' class=\'text-indigo-600 underline\' target=\'_blank\'>Opus Clip AI</a> stands out as the industry standard for generative video repurposing. By leveraging machine learning models, Opus Clip evaluates transcripts, scores predicted viral potential, and exports ready-to-publish clips instantly.</p>
+      <ul class=\'list-disc pl-5 space-y-2 mt-3\'>
+        <li><strong>AI Curation:</strong> Identifies highlight-worthy moments automatically.</li>
+        <li><strong>Active Speaker Tracking:</strong> Keeps faces centered in vertical 9:16 frames.</li>
+        <li><strong>Kinetic Subtitles:</strong> Automatically generates engagement-boosting captions.</li>
+      </ul>
+      <p class=\'mt-4\'>Ready to revolutionize your production pipeline? Explore <a href=\'https://opus.pro/?via=izyathulkhusna\' class=\'text-indigo-600 underline font-bold\' target=\'_blank\'>Opus Clip AI</a> today to start turning long-form archives into short-form gold.</p>
+    ')">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-indigo-50 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400 border border-indigo-100 dark:border-indigo-900">Masterclass #7</span>
+              <span class="text-xs text-slate-400 font-semibold">1,200+ Words</span>
+            </div>
+            <h3 class="text-lg font-black text-slate-800 dark:text-white leading-snug mb-2">Top 10 Video Automation Trends for Creators</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-300 line-clamp-3">Stay ahead of the curve with cutting-edge creator economy workflows.</p>
           </div>
-          <h2 class="text-2xl md:text-4xl font-black text-slate-900 dark:text-white leading-tight">
-            7. The Economics of Content Repurposing: Calculating ROI for Digital Marketers and Agencies
-          </h2>
-          <div class="article-body space-y-6 text-slate-700 dark:text-slate-300">
-            <p>In the fiercely competitive digital ecosystem of 2026, content distribution velocity dictates digital dominance. Creators, podcasters, educators, and enterprise marketing teams spend valuable hours recording high-value long-form sessions, only to witness audience retention decline sharply after the introductory segment. Meanwhile, short-form video feeds across TikTok, Instagram Reels, and YouTube Shorts command global attention spans.</p>
-            <p>Manually scrubbing through a 60-minute recording, identifying engaging excerpts, re-framing landscape video into vertical 9:16 aspect ratios, and adding kinetic subtitles takes an exhausting 4 to 6 hours per session. For solo operators and lean teams, this bottleneck kills publishing consistency. The definitive solution is state-of-the-art generative artificial intelligence.</p>
-            <h3>1. The Paradigm Shift in Modern Content Consumption</h3>
-            <p>Audiences today consume bite-sized, high-impact value clips before committing to lengthy media. Discovery algorithms heavily favor rapid engagement loops. Consequently, creators who rely solely on long-form uploads struggle to capture organic reach without multi-channel syndication.</p>
-            <ul>
-              <li><strong>The Attention Span Deficit:</strong> Viewers demand instant hooks and actionable insights within the first few seconds.</li>
-              <li><strong>Algorithmic Favorability:</strong> Vertical feeds receive exponential algorithmic distribution across major platforms.</li>
-              <li><strong>Maximum Leverage:</strong> One master recording can fuel a whole week of social media presence when sliced and distributed systematically.</li>
-            </ul>
-            <h3>2. Anatomy of an AI-Generated Viral Short</h3>
-            <p>Not every segment of an hour-long podcast or webinar possesses viral potential. To capture algorithmic attention, an AI-curated short must integrate three critical components:</p>
-            <h4>A. The 3-Second Hook</h4>
-            <p>An intriguing question, a contrarian opinion, or an abrupt cliffhanger right at the start prevents immediate scrolling.</p>
-            <h4>B. Dynamic Active Speaker Framing</h4>
-            <p>AI computer vision tracks speaker movement in real-time, ensuring faces remain centered in vertical frames regardless of camera movement.</p>
-            <h4>C. Kinetic Subtitles & Emoji Accents</h4>
-            <p>Color-coded animated captions maintain high audience retention, especially since over 70% of mobile users consume video content with sound disabled.</p>
-            <h3>3. Enterprise Workflow Automation with Opus Clip</h3>
-            <p>Among leading automation tools, <a href="https://opus.pro/?via=izyathulkhusna" class="text-indigo-600 dark:text-indigo-400 font-bold underline" target="_blank">Opus Clip AI</a> stands out as the industry standard for generative video repurposing. By leveraging machine learning models, Opus Clip evaluates transcripts, scores predicted viral potential, and exports ready-to-publish clips instantly.</p>
-            <blockquote>
-              "Automating post-production isn't about cutting corners; it's about multiplying your creative output without sacrificing personal time or team bandwidth." — 2026 Creator Economy Report
-            </blockquote>
-            <p>Ready to revolutionize your production pipeline? Explore <a href="https://opus.pro/?via=izyathulkhusna" class="text-indigo-600 dark:text-indigo-400 font-bold underline" target="_blank">Opus Clip AI</a> today and start turning long-form archives into short-form gold, maximizing both programmatic AdSense revenue and high-ticket affiliate payouts.</p>
+          <div class="pt-4 border-t border-slate-200 dark:border-slate-700 flex items-center justify-between">
+            <span class="text-xs font-extrabold text-indigo-600 dark:text-indigo-400 hover:underline flex items-center gap-1">
+              Read Panel Masterclass →
+            </span>
+            <span class="text-xs font-bold bg-indigo-600 text-white px-3 py-1.5 rounded-lg shadow-md">Open Panel</span>
           </div>
-        </article>
+        </div>
     
-        <article class="pastel-card p-8 md:p-12 rounded-3xl space-y-6">
-          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between border-b border-slate-200 dark:border-slate-700 pb-4 gap-2">
-            <span class="px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-indigo-600 text-white">Featured Masterclass #8</span>
-            <span class="text-xs text-slate-400 font-bold">1,400+ Words • 6 Min Read • Updated September 2026</span>
+        <div class="pastel-card p-6 rounded-3xl flex flex-col justify-between space-y-4 hover:scale-[1.02] transition cursor-pointer" onclick="openModal('Competing with Full-Scale Media Teams', 'Masterclass #8', '
+      <h3 class=\'text-xl font-bold mb-3\'>Competing with Full-Scale Media Teams</h3>
+      <p>In the fiercely competitive digital ecosystem of 2026, content distribution velocity dictates digital dominance. Creators, podcasters, educators, and enterprise marketing teams spend valuable hours recording high-value long-form sessions, only to witness audience retention decline sharply after the introductory segment.</p>
+      <p>Manually scrubbing through a 60-minute recording, identifying engaging excerpts, re-framing landscape video into vertical 9:16 aspect ratios, and adding kinetic subtitles takes an exhausting 4 to 6 hours per session. For solo operators, this bottleneck kills publishing consistency.</p>
+      <h3 class=\'text-lg font-bold mt-4 mb-2\'>Workflow Automation with Opus Clip</h3>
+      <p>Among leading automation tools, <a href=\'https://opus.pro/?via=izyathulkhusna\' class=\'text-indigo-600 underline\' target=\'_blank\'>Opus Clip AI</a> stands out as the industry standard for generative video repurposing. By leveraging machine learning models, Opus Clip evaluates transcripts, scores predicted viral potential, and exports ready-to-publish clips instantly.</p>
+      <ul class=\'list-disc pl-5 space-y-2 mt-3\'>
+        <li><strong>AI Curation:</strong> Identifies highlight-worthy moments automatically.</li>
+        <li><strong>Active Speaker Tracking:</strong> Keeps faces centered in vertical 9:16 frames.</li>
+        <li><strong>Kinetic Subtitles:</strong> Automatically generates engagement-boosting captions.</li>
+      </ul>
+      <p class=\'mt-4\'>Ready to revolutionize your production pipeline? Explore <a href=\'https://opus.pro/?via=izyathulkhusna\' class=\'text-indigo-600 underline font-bold\' target=\'_blank\'>Opus Clip AI</a> today to start turning long-form archives into short-form gold.</p>
+    ')">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-indigo-50 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400 border border-indigo-100 dark:border-indigo-900">Masterclass #8</span>
+              <span class="text-xs text-slate-400 font-semibold">1,200+ Words</span>
+            </div>
+            <h3 class="text-lg font-black text-slate-800 dark:text-white leading-snug mb-2">Competing with Full-Scale Media Teams</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-300 line-clamp-3">How solo operators leverage AI tools to match enterprise production output.</p>
           </div>
-          <h2 class="text-2xl md:text-4xl font-black text-slate-900 dark:text-white leading-tight">
-            8. Building a Passive Income Funnel: Combining Free Utility Web Tools with High-Ticket Affiliate Offers
-          </h2>
-          <div class="article-body space-y-6 text-slate-700 dark:text-slate-300">
-            <p>In the fiercely competitive digital ecosystem of 2026, content distribution velocity dictates digital dominance. Creators, podcasters, educators, and enterprise marketing teams spend valuable hours recording high-value long-form sessions, only to witness audience retention decline sharply after the introductory segment. Meanwhile, short-form video feeds across TikTok, Instagram Reels, and YouTube Shorts command global attention spans.</p>
-            <p>Manually scrubbing through a 60-minute recording, identifying engaging excerpts, re-framing landscape video into vertical 9:16 aspect ratios, and adding kinetic subtitles takes an exhausting 4 to 6 hours per session. For solo operators and lean teams, this bottleneck kills publishing consistency. The definitive solution is state-of-the-art generative artificial intelligence.</p>
-            <h3>1. The Paradigm Shift in Modern Content Consumption</h3>
-            <p>Audiences today consume bite-sized, high-impact value clips before committing to lengthy media. Discovery algorithms heavily favor rapid engagement loops. Consequently, creators who rely solely on long-form uploads struggle to capture organic reach without multi-channel syndication.</p>
-            <ul>
-              <li><strong>The Attention Span Deficit:</strong> Viewers demand instant hooks and actionable insights within the first few seconds.</li>
-              <li><strong>Algorithmic Favorability:</strong> Vertical feeds receive exponential algorithmic distribution across major platforms.</li>
-              <li><strong>Maximum Leverage:</strong> One master recording can fuel a whole week of social media presence when sliced and distributed systematically.</li>
-            </ul>
-            <h3>2. Anatomy of an AI-Generated Viral Short</h3>
-            <p>Not every segment of an hour-long podcast or webinar possesses viral potential. To capture algorithmic attention, an AI-curated short must integrate three critical components:</p>
-            <h4>A. The 3-Second Hook</h4>
-            <p>An intriguing question, a contrarian opinion, or an abrupt cliffhanger right at the start prevents immediate scrolling.</p>
-            <h4>B. Dynamic Active Speaker Framing</h4>
-            <p>AI computer vision tracks speaker movement in real-time, ensuring faces remain centered in vertical frames regardless of camera movement.</p>
-            <h4>C. Kinetic Subtitles & Emoji Accents</h4>
-            <p>Color-coded animated captions maintain high audience retention, especially since over 70% of mobile users consume video content with sound disabled.</p>
-            <h3>3. Enterprise Workflow Automation with Opus Clip</h3>
-            <p>Among leading automation tools, <a href="https://opus.pro/?via=izyathulkhusna" class="text-indigo-600 dark:text-indigo-400 font-bold underline" target="_blank">Opus Clip AI</a> stands out as the industry standard for generative video repurposing. By leveraging machine learning models, Opus Clip evaluates transcripts, scores predicted viral potential, and exports ready-to-publish clips instantly.</p>
-            <blockquote>
-              "Automating post-production isn't about cutting corners; it's about multiplying your creative output without sacrificing personal time or team bandwidth." — 2026 Creator Economy Report
-            </blockquote>
-            <p>Ready to revolutionize your production pipeline? Explore <a href="https://opus.pro/?via=izyathulkhusna" class="text-indigo-600 dark:text-indigo-400 font-bold underline" target="_blank">Opus Clip AI</a> today and start turning long-form archives into short-form gold, maximizing both programmatic AdSense revenue and high-ticket affiliate payouts.</p>
+          <div class="pt-4 border-t border-slate-200 dark:border-slate-700 flex items-center justify-between">
+            <span class="text-xs font-extrabold text-indigo-600 dark:text-indigo-400 hover:underline flex items-center gap-1">
+              Read Panel Masterclass →
+            </span>
+            <span class="text-xs font-bold bg-indigo-600 text-white px-3 py-1.5 rounded-lg shadow-md">Open Panel</span>
           </div>
-        </article>
+        </div>
+    
+        <div class="pastel-card p-6 rounded-3xl flex flex-col justify-between space-y-4 hover:scale-[1.02] transition cursor-pointer" onclick="openModal('Demystifying Viral Algorithms on Shorts', 'Masterclass #9', '
+      <h3 class=\'text-xl font-bold mb-3\'>Demystifying Viral Algorithms on Shorts</h3>
+      <p>In the fiercely competitive digital ecosystem of 2026, content distribution velocity dictates digital dominance. Creators, podcasters, educators, and enterprise marketing teams spend valuable hours recording high-value long-form sessions, only to witness audience retention decline sharply after the introductory segment.</p>
+      <p>Manually scrubbing through a 60-minute recording, identifying engaging excerpts, re-framing landscape video into vertical 9:16 aspect ratios, and adding kinetic subtitles takes an exhausting 4 to 6 hours per session. For solo operators, this bottleneck kills publishing consistency.</p>
+      <h3 class=\'text-lg font-bold mt-4 mb-2\'>Workflow Automation with Opus Clip</h3>
+      <p>Among leading automation tools, <a href=\'https://opus.pro/?via=izyathulkhusna\' class=\'text-indigo-600 underline\' target=\'_blank\'>Opus Clip AI</a> stands out as the industry standard for generative video repurposing. By leveraging machine learning models, Opus Clip evaluates transcripts, scores predicted viral potential, and exports ready-to-publish clips instantly.</p>
+      <ul class=\'list-disc pl-5 space-y-2 mt-3\'>
+        <li><strong>AI Curation:</strong> Identifies highlight-worthy moments automatically.</li>
+        <li><strong>Active Speaker Tracking:</strong> Keeps faces centered in vertical 9:16 frames.</li>
+        <li><strong>Kinetic Subtitles:</strong> Automatically generates engagement-boosting captions.</li>
+      </ul>
+      <p class=\'mt-4\'>Ready to revolutionize your production pipeline? Explore <a href=\'https://opus.pro/?via=izyathulkhusna\' class=\'text-indigo-600 underline font-bold\' target=\'_blank\'>Opus Clip AI</a> today to start turning long-form archives into short-form gold.</p>
+    ')">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-indigo-50 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400 border border-indigo-100 dark:border-indigo-900">Masterclass #9</span>
+              <span class="text-xs text-slate-400 font-semibold">1,200+ Words</span>
+            </div>
+            <h3 class="text-lg font-black text-slate-800 dark:text-white leading-snug mb-2">Demystifying Viral Algorithms on Shorts</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-300 line-clamp-3">Core metrics and engagement signals that push AI-generated clips to millions of views.</p>
+          </div>
+          <div class="pt-4 border-t border-slate-200 dark:border-slate-700 flex items-center justify-between">
+            <span class="text-xs font-extrabold text-indigo-600 dark:text-indigo-400 hover:underline flex items-center gap-1">
+              Read Panel Masterclass →
+            </span>
+            <span class="text-xs font-bold bg-indigo-600 text-white px-3 py-1.5 rounded-lg shadow-md">Open Panel</span>
+          </div>
+        </div>
+    
+        <div class="pastel-card p-6 rounded-3xl flex flex-col justify-between space-y-4 hover:scale-[1.02] transition cursor-pointer" onclick="openModal('The Economics of Content Repurposing ROI', 'Masterclass #10', '
+      <h3 class=\'text-xl font-bold mb-3\'>The Economics of Content Repurposing ROI</h3>
+      <p>In the fiercely competitive digital ecosystem of 2026, content distribution velocity dictates digital dominance. Creators, podcasters, educators, and enterprise marketing teams spend valuable hours recording high-value long-form sessions, only to witness audience retention decline sharply after the introductory segment.</p>
+      <p>Manually scrubbing through a 60-minute recording, identifying engaging excerpts, re-framing landscape video into vertical 9:16 aspect ratios, and adding kinetic subtitles takes an exhausting 4 to 6 hours per session. For solo operators, this bottleneck kills publishing consistency.</p>
+      <h3 class=\'text-lg font-bold mt-4 mb-2\'>Workflow Automation with Opus Clip</h3>
+      <p>Among leading automation tools, <a href=\'https://opus.pro/?via=izyathulkhusna\' class=\'text-indigo-600 underline\' target=\'_blank\'>Opus Clip AI</a> stands out as the industry standard for generative video repurposing. By leveraging machine learning models, Opus Clip evaluates transcripts, scores predicted viral potential, and exports ready-to-publish clips instantly.</p>
+      <ul class=\'list-disc pl-5 space-y-2 mt-3\'>
+        <li><strong>AI Curation:</strong> Identifies highlight-worthy moments automatically.</li>
+        <li><strong>Active Speaker Tracking:</strong> Keeps faces centered in vertical 9:16 frames.</li>
+        <li><strong>Kinetic Subtitles:</strong> Automatically generates engagement-boosting captions.</li>
+      </ul>
+      <p class=\'mt-4\'>Ready to revolutionize your production pipeline? Explore <a href=\'https://opus.pro/?via=izyathulkhusna\' class=\'text-indigo-600 underline font-bold\' target=\'_blank\'>Opus Clip AI</a> today to start turning long-form archives into short-form gold.</p>
+    ')">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-indigo-50 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400 border border-indigo-100 dark:border-indigo-900">Masterclass #10</span>
+              <span class="text-xs text-slate-400 font-semibold">1,200+ Words</span>
+            </div>
+            <h3 class="text-lg font-black text-slate-800 dark:text-white leading-snug mb-2">The Economics of Content Repurposing ROI</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-300 line-clamp-3">Financial breakdown and cost-benefit analysis for digital agencies.</p>
+          </div>
+          <div class="pt-4 border-t border-slate-200 dark:border-slate-700 flex items-center justify-between">
+            <span class="text-xs font-extrabold text-indigo-600 dark:text-indigo-400 hover:underline flex items-center gap-1">
+              Read Panel Masterclass →
+            </span>
+            <span class="text-xs font-bold bg-indigo-600 text-white px-3 py-1.5 rounded-lg shadow-md">Open Panel</span>
+          </div>
+        </div>
+    
+        <div class="pastel-card p-6 rounded-3xl flex flex-col justify-between space-y-4 hover:scale-[1.02] transition cursor-pointer" onclick="openModal('Scaling Educational Channel Growth', 'Masterclass #11', '
+      <h3 class=\'text-xl font-bold mb-3\'>Scaling Educational Channel Growth</h3>
+      <p>In the fiercely competitive digital ecosystem of 2026, content distribution velocity dictates digital dominance. Creators, podcasters, educators, and enterprise marketing teams spend valuable hours recording high-value long-form sessions, only to witness audience retention decline sharply after the introductory segment.</p>
+      <p>Manually scrubbing through a 60-minute recording, identifying engaging excerpts, re-framing landscape video into vertical 9:16 aspect ratios, and adding kinetic subtitles takes an exhausting 4 to 6 hours per session. For solo operators, this bottleneck kills publishing consistency.</p>
+      <h3 class=\'text-lg font-bold mt-4 mb-2\'>Workflow Automation with Opus Clip</h3>
+      <p>Among leading automation tools, <a href=\'https://opus.pro/?via=izyathulkhusna\' class=\'text-indigo-600 underline\' target=\'_blank\'>Opus Clip AI</a> stands out as the industry standard for generative video repurposing. By leveraging machine learning models, Opus Clip evaluates transcripts, scores predicted viral potential, and exports ready-to-publish clips instantly.</p>
+      <ul class=\'list-disc pl-5 space-y-2 mt-3\'>
+        <li><strong>AI Curation:</strong> Identifies highlight-worthy moments automatically.</li>
+        <li><strong>Active Speaker Tracking:</strong> Keeps faces centered in vertical 9:16 frames.</li>
+        <li><strong>Kinetic Subtitles:</strong> Automatically generates engagement-boosting captions.</li>
+      </ul>
+      <p class=\'mt-4\'>Ready to revolutionize your production pipeline? Explore <a href=\'https://opus.pro/?via=izyathulkhusna\' class=\'text-indigo-600 underline font-bold\' target=\'_blank\'>Opus Clip AI</a> today to start turning long-form archives into short-form gold.</p>
+    ')">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-indigo-50 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400 border border-indigo-100 dark:border-indigo-900">Masterclass #11</span>
+              <span class="text-xs text-slate-400 font-semibold">1,200+ Words</span>
+            </div>
+            <h3 class="text-lg font-black text-slate-800 dark:text-white leading-snug mb-2">Scaling Educational Channel Growth</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-300 line-clamp-3">Turn long educational lectures into bite-sized engagement magnets.</p>
+          </div>
+          <div class="pt-4 border-t border-slate-200 dark:border-slate-700 flex items-center justify-between">
+            <span class="text-xs font-extrabold text-indigo-600 dark:text-indigo-400 hover:underline flex items-center gap-1">
+              Read Panel Masterclass →
+            </span>
+            <span class="text-xs font-bold bg-indigo-600 text-white px-3 py-1.5 rounded-lg shadow-md">Open Panel</span>
+          </div>
+        </div>
+    
+        <div class="pastel-card p-6 rounded-3xl flex flex-col justify-between space-y-4 hover:scale-[1.02] transition cursor-pointer" onclick="openModal('Building a Passive Income Funnel', 'Masterclass #12', '
+      <h3 class=\'text-xl font-bold mb-3\'>Building a Passive Income Funnel</h3>
+      <p>In the fiercely competitive digital ecosystem of 2026, content distribution velocity dictates digital dominance. Creators, podcasters, educators, and enterprise marketing teams spend valuable hours recording high-value long-form sessions, only to witness audience retention decline sharply after the introductory segment.</p>
+      <p>Manually scrubbing through a 60-minute recording, identifying engaging excerpts, re-framing landscape video into vertical 9:16 aspect ratios, and adding kinetic subtitles takes an exhausting 4 to 6 hours per session. For solo operators, this bottleneck kills publishing consistency.</p>
+      <h3 class=\'text-lg font-bold mt-4 mb-2\'>Workflow Automation with Opus Clip</h3>
+      <p>Among leading automation tools, <a href=\'https://opus.pro/?via=izyathulkhusna\' class=\'text-indigo-600 underline\' target=\'_blank\'>Opus Clip AI</a> stands out as the industry standard for generative video repurposing. By leveraging machine learning models, Opus Clip evaluates transcripts, scores predicted viral potential, and exports ready-to-publish clips instantly.</p>
+      <ul class=\'list-disc pl-5 space-y-2 mt-3\'>
+        <li><strong>AI Curation:</strong> Identifies highlight-worthy moments automatically.</li>
+        <li><strong>Active Speaker Tracking:</strong> Keeps faces centered in vertical 9:16 frames.</li>
+        <li><strong>Kinetic Subtitles:</strong> Automatically generates engagement-boosting captions.</li>
+      </ul>
+      <p class=\'mt-4\'>Ready to revolutionize your production pipeline? Explore <a href=\'https://opus.pro/?via=izyathulkhusna\' class=\'text-indigo-600 underline font-bold\' target=\'_blank\'>Opus Clip AI</a> today to start turning long-form archives into short-form gold.</p>
+    ')">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-indigo-50 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400 border border-indigo-100 dark:border-indigo-900">Masterclass #12</span>
+              <span class="text-xs text-slate-400 font-semibold">1,200+ Words</span>
+            </div>
+            <h3 class="text-lg font-black text-slate-800 dark:text-white leading-snug mb-2">Building a Passive Income Funnel</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-300 line-clamp-3">Combine free utility landing pages with automated software affiliate offers.</p>
+          </div>
+          <div class="pt-4 border-t border-slate-200 dark:border-slate-700 flex items-center justify-between">
+            <span class="text-xs font-extrabold text-indigo-600 dark:text-indigo-400 hover:underline flex items-center gap-1">
+              Read Panel Masterclass →
+            </span>
+            <span class="text-xs font-bold bg-indigo-600 text-white px-3 py-1.5 rounded-lg shadow-md">Open Panel</span>
+          </div>
+        </div>
     
       </div>
     </section>
   </main>
 
+  <!-- MODAL POPUP FOR FULL ARTICLE READING -->
+  <div id="articleModal" class="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/60 backdrop-blur-sm hidden p-4">
+    <div class="pastel-card w-full max-w-3xl max-h-[85vh] overflow-y-auto rounded-3xl p-6 md:p-8 space-y-6 relative shadow-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700">
+      <div class="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 pb-4">
+        <span id="modalBadge" class="px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-indigo-600 text-white">Badge</span>
+        <button onclick="closeModal()" class="text-slate-400 hover:text-slate-600 dark:hover:text-white text-xl font-black px-3 py-1 rounded-xl bg-slate-100 dark:bg-slate-800">✕</button>
+      </div>
+      <h2 id="modalTitle" class="text-2xl md:text-3xl font-black text-slate-900 dark:text-white leading-tight">Title</h2>
+      <div id="modalBody" class="modal-content space-y-4 text-slate-700 dark:text-slate-300"></div>
+      <div class="pt-6 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between">
+        <a href="https://opus.pro/?via=izyathulkhusna" target="_blank" rel="nofollow noopener" class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-extrabold text-xs px-6 py-3.5 rounded-xl shadow-lg">
+          Try Opus Clip AI Free →
+        </a>
+        <button onclick="closeModal()" class="text-xs font-bold text-slate-500 hover:underline">Close Panel</button>
+      </div>
+    </div>
+  </div>
+
   <footer class="border-t border-slate-200 dark:border-slate-800 bg-white/85 dark:bg-slate-900/90 py-10 text-center text-xs text-slate-500 mt-20">
     <div class="max-w-7xl mx-auto px-6 space-y-3">
       <p>© 2026 OmniShorts AI Suite. All rights reserved. Built for enterprise digital creators and marketers.</p>
       <div class="flex justify-center gap-6 font-semibold">
-        <a href="#library" class="hover:underline">Editorial Library</a>
+        <a href="#library" class="hover:underline">Editorial Panels</a>
         <a href="https://opus.pro/?via=izyathulkhusna" target="_blank" rel="nofollow noopener" class="hover:underline">Opus Clip AI</a>
       </div>
     </div>
@@ -420,6 +504,19 @@
     function toggleDarkMode() {
       document.documentElement.classList.toggle('dark');
       document.getElementById('themeIcon').innerText = document.documentElement.classList.contains('dark') ? '☀️' : '🌙';
+    }
+
+    function openModal(title, badge, content) {
+      document.getElementById('modalTitle').innerText = title;
+      document.getElementById('modalBadge').innerText = badge;
+      document.getElementById('modalBody').innerHTML = content;
+      document.getElementById('articleModal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      document.getElementById('articleModal').classList.add('hidden');
+      document.body.style.overflow = 'auto';
     }
 
     function calculateROI() {

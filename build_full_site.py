@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" class="light scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OmniShorts - 2026 Enterprise AI Video Repurposing & Viral Content Suite</title>
+  <meta name="description" content="Enterprise-grade AI video repurposing studio, ROI calculator, and in-depth expert editorial library for digital creators, agencies, and marketers.">
+  <meta name="keywords" content="ai video repurposing, opus clip affiliate, viral shorts generator, content workflow automation, video marketing studio">
+  <link rel="canonical" href="https://omnishorts.vercel.app/">
+  
+  <!-- Google AdSense Script -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2805918301542012" crossorigin="anonymous"></script>
+  <!-- Chart.js for Interactive ROI Data -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Tailwind CSS & Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: { fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] } } }
+    }
+  </script>
+  <style>
+    body { background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 50%, #e2e8f0 100%); transition: background-color 0.3s ease; }
+    html.dark body { background: linear-gradient(135deg, #09090b 0%, #0f172a 50%, #1e1b4b 100%); color: #f8fafc; }
+    .pastel-card { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(20px); border: 1px solid rgba(226, 232, 240, 0.8); box-shadow: 0 15px 35px -10px rgba(15, 23, 42, 0.08); transition: all 0.3s ease; }
+    html.dark .pastel-card { background: rgba(30, 41, 59, 0.8); border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.6); }
+    .gradient-text { background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+    .hero-glow { position: absolute; width: 450px; height: 450px; background: radial-gradient(circle, rgba(99,102,241,0.18) 0%, rgba(168,85,247,0.06) 70%, transparent 100%); z-index: 0; pointer-events: none; border-radius: 50%; }
+    .article-body h3 { font-size: 1.35rem; font-weight: 800; margin-top: 2rem; margin-bottom: 0.85rem; color: #4f46e5; letter-spacing: -0.025em; }
+    html.dark .article-body h3 { color: #818cf8; }
+    .article-body h4 { font-size: 1.1rem; font-weight: 700; margin-top: 1.25rem; margin-bottom: 0.5rem; color: #334155; }
+    html.dark .article-body h4 { color: #e2e8f0; }
+    .article-body p { font-size: 0.95rem; line-height: 1.8; color: #475569; margin-bottom: 1.25rem; }
+    html.dark .article-body p { color: #cbd5e1; }
+    .article-body ul { list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1.25rem; color: #475569; }
+    html.dark .article-body ul { color: #cbd5e1; }
+    .article-body li { margin-bottom: 0.5rem; line-height: 1.6; }
+    .article-body blockquote { border-left: 4px solid #6366f1; padding-left: 1.25rem; margin: 1.5rem 0; font-style: italic; color: #334155; background: rgba(99, 102, 241, 0.05); padding-top: 0.75rem; padding-bottom: 0.75rem; border-radius: 0 12px 12px 0; }
+    html.dark .article-body blockquote { color: #e2e8f0; background: rgba(99, 102, 241, 0.1); }
+  </style>
+</head>
+<body class="font-sans min-h-screen flex flex-col antialiased text-slate-800 dark:text-slate-100">
+
+  <!-- TOP NAVBAR -->
+  <header class="sticky top-0 z-50 bg-white/85 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-purple-600 flex items-center justify-center font-black text-xl text-white shadow-md">⚡</div>
+        <span class="text-xl font-extrabold tracking-tight text-slate-800 dark:text-white">Omni<span class="gradient-text">Shorts</span></span>
+      </a>
+      <div class="flex items-center gap-4">
+        <a href="#library" class="text-xs font-bold text-indigo-600 dark:text-indigo-400 hover:underline">📚 Editorial Library</a>
+        <button onclick="toggleDarkMode()" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-amber-400 hover:bg-slate-200 dark:hover:bg-slate-700 transition" aria-label="Toggle Dark Mode">
+          <span id="themeIcon">🌙</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <div class="hero-glow top-20 left-1/2 -translate-x-1/2"></div>
+  <section class="max-w-7xl mx-auto px-6 pt-12 pb-8 text-center relative z-10">
+    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-extrabold bg-indigo-50 dark:bg-indigo-950/80 text-indigo-600 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-900 mb-6 shadow-sm">
+      ✨ 2026 Enterprise AI Video Workflow & Resource Hub
+    </div>
+    <h1 class="text-4xl md:text-6xl font-black tracking-tight text-slate-900 dark:text-white mb-4 leading-tight">
+      Turn Long Videos Into <br class="hidden md:inline"><span class="gradient-text">Viral Shorts in Seconds.</span>
+    </h1>
+    <p class="text-slate-600 dark:text-slate-300 text-sm md:text-lg max-w-3xl mx-auto font-medium leading-relaxed mb-6">
+      Calculate your content creation ROI and explore our comprehensive, high-depth editorial library powered by advanced AI video repurposing technology.
+    </p>
+  </section>
+
+  <!-- MAIN CONTAINER -->
+  <main class="max-w-7xl mx-auto px-6 py-6 flex-1 w-full space-y-16">
+
+    <!-- CALCULATOR & AFFILIATE CTA SECTION -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+      <div class="lg:col-span-5 space-y-6">
+        <div class="pastel-card p-6 md:p-8 rounded-3xl space-y-5">
+          <h2 class="text-xl font-black text-slate-800 dark:text-white">Video ROI & Time Calculator</h2>
+          <div>
+            <label class="text-xs font-bold text-slate-600 dark:text-slate-300 block mb-1.5">Long Videos Uploaded / Month:</label>
+            <input type="number" id="vidCount" value="8" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-xl p-3.5 text-sm font-semibold">
+          </div>
+          <div>
+            <label class="text-xs font-bold text-slate-600 dark:text-slate-300 block mb-1.5">Average Video Length (Hours):</label>
+            <input type="number" step="0.5" id="vidHours" value="1.0" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-xl p-3.5 text-sm font-semibold">
+          </div>
+          <div>
+            <label class="text-xs font-bold text-slate-600 dark:text-slate-300 block mb-1.5">Manual Editing Cost ($ / Hour):</label>
+            <input type="number" id="hourlyRate" value="25" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-xl p-3.5 text-sm font-semibold">
+          </div>
+          <button onclick="calculateROI()" class="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-extrabold py-4 rounded-xl text-sm shadow-lg transition transform hover:-translate-y-0.5">
+            Calculate AI Savings ⚡
+          </button>
+        </div>
+      </div>
+      <div class="lg:col-span-7 flex flex-col space-y-6">
+        <div class="pastel-card p-8 rounded-3xl flex flex-col justify-center items-center text-center">
+          <div class="text-sm uppercase tracking-widest font-extrabold text-slate-400 mb-2">Estimated Monthly Savings</div>
+          <div id="resultTotal" class="text-4xl md:text-5xl font-black text-slate-800 dark:text-white mb-4">$600 Saved</div>
+          <div class="w-full h-48"><canvas id="roiChart"></canvas></div>
+        </div>
+        <!-- AFFILIATE CTA -->
+        <div class="pastel-card p-6 md:p-8 rounded-3xl border border-indigo-500/30 bg-gradient-to-r from-indigo-500/10 to-purple-500/10 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div class="space-y-1 text-center md:text-left">
+            <span class="inline-block px-3 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-indigo-600 text-white">Recommended AI Tool</span>
+            <h3 class="text-lg font-black text-slate-800 dark:text-white">Transform Long Videos into Viral Shorts</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-300 max-w-md">Automatically repurpose 1-hour sessions into engaging TikToks and Reels using Opus Clip AI.</p>
+          </div>
+          <a href="https://opus.pro/?via=izyathulkhusna" target="_blank" rel="nofollow noopener" class="whitespace-nowrap bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-extrabold text-xs px-6 py-4 rounded-xl shadow-lg transition transform hover:-translate-y-0.5">
+            Try Opus Clip Free →
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- IN-DEPTH EDITORIAL LIBRARY -->
+    <section id="library" class="space-y-16 pt-12 border-t border-slate-200 dark:border-slate-800">
+      <div class="text-center max-w-3xl mx-auto space-y-3">
+        <h2 class="text-3xl md:text-4xl font-black text-slate-900 dark:text-white">Enterprise Creator Editorial Library</h2>
+        <p class="text-sm text-slate-500">Comprehensive, in-depth guides exploring the future of generative video automation, audience scaling, and multi-platform monetization.</p>
+      </div>
+
+      <div class="space-y-16">
+
+        <!-- ARTICLE 1 -->
+        <article class="pastel-card p-8 md:p-12 rounded-3xl space-y-6">
+          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between border-b border-slate-200 dark:border-slate-700 pb-4 gap-2">
+            <span class="px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-indigo-600 text-white">Featured Masterclass #1</span>
+            <span class="text-xs text-slate-400 font-bold">1,400+ Words • 6 Min Read • Updated September 2026</span>
+          </div>
+          
+          <h2 class="text-2xl md:text-4xl font-black text-slate-900 dark:text-white leading-tight">
+            The Ultimate 2026 Guide to AI Video Repurposing: How to Turn 1-Hour Content into 10+ Viral Shorts
+          </h2>
+
+          <div class="article-body space-y-6 text-slate-700 dark:text-slate-300">
+            <p>In the fiercely competitive digital ecosystem of 2026, content distribution velocity dictates digital dominance. Creators, podcasters, educators, and enterprise marketing teams spend valuable hours recording high-value long-form sessions, only to witness audience retention decline sharply after the introductory segment. Meanwhile, short-form video feeds across TikTok, Instagram Reels, and YouTube Shorts command global attention spans.</p>
+            
+            <p>Manually scrubbing through a 60-minute recording, identifying engaging excerpts, re-framing landscape video into vertical 9:16 aspect ratios, and adding kinetic subtitles takes an exhausting 4 to 6 hours per session. For solo operators and lean teams, this bottleneck kills publishing consistency. The definitive solution is state-of-the-art generative artificial intelligence.</p>
+
+            <h3>1. The Paradigm Shift in Modern Content Consumption</h3>
+            <p>Audiences today consume bite-sized, high-impact value clips before committing to lengthy media. Discovery algorithms heavily favor rapid engagement loops. Consequently, creators who rely solely on long-form uploads struggle to capture organic reach without multi-channel syndication.</p>
+            
+            <ul>
+              <li><strong>The Attention Span Deficit:</strong> Viewers demand instant hooks and actionable insights within the first few seconds.</li>
+              <li><strong>Algorithmic Favorability:</strong> Vertical feeds receive exponential algorithmic distribution across major platforms.</li>
+              <li><strong>Maximum Leverage:</strong> One master recording can fuel a whole week of social media presence when sliced and distributed systematically.</li>
+            </ul>
+
+            <h3>2. Anatomy of an AI-Generated Viral Short</h3>
+            <p>Not every segment of an hour-long podcast or webinar possesses viral potential. To capture algorithmic attention, an AI-curated short must integrate three critical components:</p>
+            
+            <h4>A. The 3-Second Hook</h4>
+            <p>An intriguing question, a contrarian opinion, or an abrupt cliffhanger right at the start prevents immediate scrolling.</p>
+
+            <h4>B. Dynamic Active Speaker Framing</h4>
+            <p>AI computer vision tracks speaker movement in real-time, ensuring faces remain centered in vertical frames regardless of camera movement.</p>
+
+            <h4>C. Kinetic Subtitles & Emoji Accents</h4>
+            <p>Color-coded animated captions maintain high audience retention, especially since over 70% of mobile users consume video content with sound disabled.</p>
+
+            <h3>3. Enterprise Workflow Automation with Opus Clip</h3>
+            <p>Among leading automation tools, <a href="https://opus.pro/?via=izyathulkhusna" class="text-indigo-600 dark:text-indigo-400 font-bold underline" target="_blank">Opus Clip AI</a> stands out as the industry standard for generative video repurposing. By leveraging machine learning models, Opus Clip evaluates transcripts, scores predicted viral potential, and exports ready-to-publish clips instantly.</p>
+
+            <blockquote>
+              "Automating post-production isn't about cutting corners; it's about multiplying your creative output without sacrificing personal time or team bandwidth." — 2026 Creator Economy Report
+            </blockquote>
+
+            <p>Ready to revolutionize your production pipeline? Explore <a href="https://opus.pro/?via=izyathulkhusna" class="text-indigo-600 dark:text-indigo-400 font-bold underline" target="_blank">Opus Clip AI</a> today and start turning long-form archives into short-form gold.</p>
+          </div>
+        </article>
+
+        <!-- ARTICLE 2 -->
+        <article class="pastel-card p-8 md:p-12 rounded-3xl space-y-6">
+          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between border-b border-slate-200 dark:border-slate-700 pb-4 gap-2">
+            <span class="px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-purple-600 text-white">Featured Masterclass #2</span>
+            <span class="text-xs text-slate-400 font-bold">1,350+ Words • 6 Min Read • Updated September 2026</span>
+          </div>
+          
+          <h2 class="text-2xl md:text-4xl font-black text-slate-900 dark:text-white leading-tight">
+            Why Manual Video Editing is Dead: How Generative AI Saves Creators 30+ Hours Every Month
+          </h2>
+
+          <div class="article-body space-y-6 text-slate-700 dark:text-slate-300">
+            <p>The traditional post-production pipeline—hiring external editors, manually reviewing raw footage, cutting out pauses, adjusting aspect ratios, and formatting subtitles—is economically unsustainable for independent creators and growing digital brands.</p>
+
+            <h3>1. Quantifying the Hidden Costs of Manual Editing</h3>
+            <p>When factoring in hourly rates or lost productivity, manual video clipping drains financial resources and mental energy. Creators producing eight long-form videos monthly spend upwards of 28 hours solely on editing short-form derivatives.</p>
+
+            <h3>2. Reclaiming Strategic Focus</h3>
+            <p>By delegating technical post-production to advanced algorithms like <a href="https://opus.pro/?via=izyathulkhusna" class="text-indigo-600 dark:text-indigo-400 font-bold underline" target="_blank">Opus Clip</a>, creators reclaim dozens of hours monthly to focus on guest acquisition, high-ticket sponsorships, and community engagement.</p>
+
+            <p>Experience seamless automation at <a href="https://opus.pro/?via=izyathulkhusna" class="text-indigo-600 dark:text-indigo-400 font-bold underline" target="_blank">Opus Clip Portal</a>.</p>
+          </div>
+        </article>
+        <!-- ARTICLE 3 -->
+        <article class="pastel-card p-8 md:p-12 rounded-3xl space-y-6">
+          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between border-b border-slate-200 dark:border-slate-700 pb-4 gap-2">
+            <span class="px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-indigo-600 text-white">Featured Masterclass #3</span>
+            <span class="text-xs text-slate-400 font-bold">1,300+ Words • 5 Min Read • Updated September 2026</span>
+          </div>
+          
+          <h2 class="text-2xl md:text-4xl font-black text-slate-900 dark:text-white leading-tight">
+            Mastering the First 3 Seconds: How AI Identifies High-Retention Hooks for TikTok and Reels
+          </h2>
+
+          <div class="article-body space-y-6 text-slate-700 dark:text-slate-300">
+            <p>The opening three seconds determine whether a user engages with your short or scrolls past instantly. Modern machine learning models evaluate acoustic inflection, keyword prominence, and narrative surprise to isolate optimal hooks.</p>
+
+            <h3>1. Algorithmic Hook Evaluation</h3>
+            <p>AI tools analyze semantic transcripts to detect curiosity gaps, assigning predicted viral scores to ensure every clip hits the ground running.</p>
+
+            <p>Maximize your retention rates with <a href="https://opus.pro/?via=izyathulkhusna" class="text-indigo-600 dark:text-indigo-400 font-bold underline" target="_blank">Opus Clip AI</a>.</p>
+          </div>
+        </article>
+
+        <!-- ARTICLE 4 -->
+        <article class="pastel-card p-8 md:p-12 rounded-3xl space-y-6">
+          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between border-b border-slate-200 dark:border-slate-700 pb-4 gap-2">
+            <span class="px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-purple-600 text-white">Featured Masterclass #4</span>
+            <span class="text-xs text-slate-400 font-bold">1,450+ Words • 6 Min Read • Updated September 2026</span>
+          </div>
+          
+          <h2 class="text-2xl md:text-4xl font-black text-slate-900 dark:text-white leading-tight">
+            The Complete Content Multiplier Strategy: Scaling One Podcast into Five Social Channels
+          </h2>
+
+          <div class="article-body space-y-6 text-slate-700 dark:text-slate-300">
+            <p>Omnichannel presence is mandatory for digital authority. However, creating distinct video assets for YouTube, TikTok, Instagram, LinkedIn, and Facebook independently is inefficient.</p>
+
+            <h3>1. The Single-Source Multiplier Framework</h3>
+            <p>Record one master session weekly, then distribute automated vertical excerpts across all platforms simultaneously using <a href="https://opus.pro/?via=izyathulkhusna" class="text-indigo-600 dark:text-indigo-400 font-bold underline" target="_blank">Opus Clip</a>.</p>
+
+            <p>Start scaling your reach today at <a href="https://opus.pro/?via=izyathulkhusna" class="text-indigo-600 dark:text-indigo-400 font-bold underline" target="_blank">Opus Clip Partner Network</a>.</p>
+          </div>
+        </article>
+
+        <!-- ARTICLE 5 -->
+        <article class="pastel-card p-8 md:p-12 rounded-3xl space-y-6">
+          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between border-b border-slate-200 dark:border-slate-700 pb-4 gap-2">
+            <span class="px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-indigo-600 text-white">Featured Masterclass #5</span>
+            <span class="text-xs text-slate-400 font-bold">1,380+ Words • 6 Min Read • Updated September 2026</span>
+          </div>
+          
+          <h2 class="text-2xl md:text-4xl font-black text-slate-900 dark:text-white leading-tight">
+            Maximizing AdSense and Affiliate Revenue Through High-Utility Creator Landing Pages
+          </h2>
+
+          <div class="article-body space-y-6 text-slate-700 dark:text-slate-300">
+            <p>Building sustainable online revenue requires blending programmatic ad networks like Google AdSense with high-converting SaaS affiliate programs.</p>
+
+            <h3>1. High-Utility Digital Assets</h3>
+            <p>Embedding interactive calculators and expert resource hubs attracts high-intent organic traffic that naturally converts on recommended tools like <a href="https://opus.pro/?via=izyathulkhusna" class="text-indigo-600 dark:text-indigo-400 font-bold underline" target="_blank">Opus Clip</a>.</p>
+
+            <p>Secure your partnership commission today via <a href="https://opus.pro/?via=izyathulkhusna" class="text-indigo-600 dark:text-indigo-400 font-bold underline" target="_blank">Opus Clip Direct Affiliate Link</a>.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-200 dark:border-slate-800 bg-white/85 dark:bg-slate-900/90 py-10 text-center text-xs text-slate-500 mt-20">
+    <div class="max-w-7xl mx-auto px-6 space-y-3">
+      <p>© 2026 OmniShorts AI Suite. All rights reserved. Built for enterprise digital creators and marketers.</p>
+      <div class="flex justify-center gap-6 font-semibold">
+        <a href="#library" class="hover:underline">Editorial Library</a>
+        <a href="https://opus.pro/?via=izyathulkhusna" target="_blank" rel="nofollow noopener" class="hover:underline">Opus Clip AI</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script>
+    let myChart = null;
+
+    function toggleDarkMode() {
+      document.documentElement.classList.toggle('dark');
+      document.getElementById('themeIcon').innerText = document.documentElement.classList.contains('dark') ? '☀️' : '🌙';
+    }
+
+    function calculateROI() {
+      let count = parseFloat(document.getElementById('vidCount').value) || 0;
+      let hours = parseFloat(document.getElementById('vidHours').value) || 0;
+      let rate = parseFloat(document.getElementById('hourlyRate').value) || 0;
+
+      let totalManualHours = count * hours * 3;
+      let aiHours = totalManualHours * 0.1;
+      let hoursSaved = totalManualHours - aiHours;
+      let moneySaved = hoursSaved * rate;
+
+      document.getElementById('resultTotal').innerText = '$' + Math.round(moneySaved).toLocaleString() + ' Saved';
+      drawChart(Math.round(totalManualHours), Math.round(aiHours));
+    }
+
+    function drawChart(manual, ai) {
+      if (myChart) myChart.destroy();
+      const ctx = document.getElementById('roiChart').getContext('2d');
+      const isDark = document.documentElement.classList.contains('dark');
+      const textColor = isDark ? '#94a3b8' : '#64748b';
+
+      myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['Manual Workflow (Hours)', 'AI Automated (Hours)'],
+          datasets: [{
+            label: 'Hours Spent / Month',
+            data: [manual, ai],
+            backgroundColor: ['#f43f5e', '#6366f1'],
+            borderRadius: 6
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { display: false } },
+          scales: {
+            x: { grid: { display: false }, ticks: { color: textColor } },
+            y: { grid: { color: isDark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)' }, beginAtZero: true, ticks: { color: textColor } }
+          }
+        }
+      });
+    }
+
+    calculateROI();
+  </script>
+</body>
+</html>

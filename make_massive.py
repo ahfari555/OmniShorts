@@ -1,0 +1,284 @@
+# Skrip Python untuk menghasilkan index.html dengan Panel Artikel Interaktif & Modal Popup
+html_head = """<!DOCTYPE html>
+<html lang="en" class="light scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OmniShorts - 2026 Enterprise AI Video Repurposing & Viral Content Suite</title>
+  <meta name="description" content="Enterprise-grade AI video repurposing studio, ROI calculator, and in-depth expert editorial library for digital creators, agencies, and marketers.">
+  <meta name="keywords" content="ai video repurposing, opus clip affiliate, viral shorts generator, content workflow automation, video marketing studio">
+  <link rel="canonical" href="https://omnishorts.vercel.app/">
+  
+  <!-- Google AdSense Script -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2805918301542012" crossorigin="anonymous"></script>
+  <!-- Chart.js for Interactive ROI Data -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Tailwind CSS & Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: { fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] } } }
+    }
+  </script>
+  <style>
+    body { background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 50%, #e2e8f0 100%); transition: background-color 0.3s ease; }
+    html.dark body { background: linear-gradient(135deg, #09090b 0%, #0f172a 50%, #1e1b4b 100%); color: #f8fafc; }
+    .pastel-card { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(20px); border: 1px solid rgba(226, 232, 240, 0.8); box-shadow: 0 15px 35px -10px rgba(15, 23, 42, 0.08); transition: all 0.3s ease; }
+    html.dark .pastel-card { background: rgba(30, 41, 59, 0.8); border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.6); }
+    .gradient-text { background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+    .hero-glow { position: absolute; width: 450px; height: 450px; background: radial-gradient(circle, rgba(99,102,241,0.18) 0%, rgba(168,85,247,0.06) 70%, transparent 100%); z-index: 0; pointer-events: none; border-radius: 50%; }
+    .modal-content h3 { font-size: 1.35rem; font-weight: 800; margin-top: 1.5rem; margin-bottom: 0.75rem; color: #4f46e5; }
+    html.dark .modal-content h3 { color: #818cf8; }
+    .modal-content p { font-size: 0.95rem; line-height: 1.8; color: #475569; margin-bottom: 1rem; }
+    html.dark .modal-content p { color: #cbd5e1; }
+    .modal-content ul { list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1rem; color: #475569; }
+    html.dark .modal-content ul { color: #cbd5e1; }
+    .modal-content li { margin-bottom: 0.4rem; }
+  </style>
+</head>
+<body class="font-sans min-h-screen flex flex-col antialiased text-slate-800 dark:text-slate-100">
+
+  <header class="sticky top-0 z-50 bg-white/85 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-purple-600 flex items-center justify-center font-black text-xl text-white shadow-md">⚡</div>
+        <span class="text-xl font-extrabold tracking-tight text-slate-800 dark:text-white">Omni<span class="gradient-text">Shorts</span></span>
+      </a>
+      <div class="flex items-center gap-4">
+        <a href="#library" class="text-xs font-bold text-indigo-600 dark:text-indigo-400 hover:underline">📚 Editorial Library</a>
+        <button onclick="toggleDarkMode()" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-amber-400 hover:bg-slate-200 dark:hover:bg-slate-700 transition" aria-label="Toggle Dark Mode">
+          <span id="themeIcon">🌙</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="hero-glow top-20 left-1/2 -translate-x-1/2"></div>
+  <section class="max-w-7xl mx-auto px-6 pt-12 pb-8 text-center relative z-10">
+    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-extrabold bg-indigo-50 dark:bg-indigo-950/80 text-indigo-600 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-900 mb-6 shadow-sm">
+      ✨ 2026 Enterprise AI Video Workflow & Resource Hub
+    </div>
+    <h1 class="text-4xl md:text-6xl font-black tracking-tight text-slate-900 dark:text-white mb-4 leading-tight">
+      Turn Long Videos Into <br class="hidden md:inline"><span class="gradient-text">Viral Shorts in Seconds.</span>
+    </h1>
+    <p class="text-slate-600 dark:text-slate-300 text-sm md:text-lg max-w-3xl mx-auto font-medium leading-relaxed mb-6">
+      Calculate your content creation ROI and explore our professional interactive panel masterclasses powered by advanced AI video repurposing technology.
+    </p>
+  </section>
+
+  <main class="max-w-7xl mx-auto px-6 py-6 flex-1 w-full space-y-16">
+    <!-- CALCULATOR -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+      <div class="lg:col-span-5 space-y-6">
+        <div class="pastel-card p-6 md:p-8 rounded-3xl space-y-5">
+          <h2 class="text-xl font-black text-slate-800 dark:text-white">Video ROI & Time Calculator</h2>
+          <div>
+            <label class="text-xs font-bold text-slate-600 dark:text-slate-300 block mb-1.5">Long Videos Uploaded / Month:</label>
+            <input type="number" id="vidCount" value="8" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-xl p-3.5 text-sm font-semibold">
+          </div>
+          <div>
+            <label class="text-xs font-bold text-slate-600 dark:text-slate-300 block mb-1.5">Average Video Length (Hours):</label>
+            <input type="number" step="0.5" id="vidHours" value="1.0" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-xl p-3.5 text-sm font-semibold">
+          </div>
+          <div>
+            <label class="text-xs font-bold text-slate-600 dark:text-slate-300 block mb-1.5">Manual Editing Cost ($ / Hour):</label>
+            <input type="number" id="hourlyRate" value="25" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-xl p-3.5 text-sm font-semibold">
+          </div>
+          <button onclick="calculateROI()" class="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-extrabold py-4 rounded-xl text-sm shadow-lg transition transform hover:-translate-y-0.5">
+            Calculate AI Savings ⚡
+          </button>
+        </div>
+      </div>
+      <div class="lg:col-span-7 flex flex-col space-y-6">
+        <div class="pastel-card p-8 rounded-3xl flex flex-col justify-center items-center text-center">
+          <div class="text-sm uppercase tracking-widest font-extrabold text-slate-400 mb-2">Estimated Monthly Savings</div>
+          <div id="resultTotal" class="text-4xl md:text-5xl font-black text-slate-800 dark:text-white mb-4">$600 Saved</div>
+          <div class="w-full h-48"><canvas id="roiChart"></canvas></div>
+        </div>
+        <div class="pastel-card p-6 md:p-8 rounded-3xl border border-indigo-500/30 bg-gradient-to-r from-indigo-500/10 to-purple-500/10 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div class="space-y-1 text-center md:text-left">
+            <span class="inline-block px-3 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-indigo-600 text-white">Recommended AI Tool</span>
+            <h3 class="text-lg font-black text-slate-800 dark:text-white">Transform Long Videos into Viral Shorts</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-300 max-w-md">Automatically repurpose 1-hour sessions into engaging TikToks and Reels using Opus Clip AI.</p>
+          </div>
+          <a href="https://opus.pro/?via=izyathulkhusna" target="_blank" rel="nofollow noopener" class="whitespace-nowrap bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-extrabold text-xs px-6 py-4 rounded-xl shadow-lg transition transform hover:-translate-y-0.5">
+            Try Opus Clip Free →
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PANELS LIBRARY SECTION -->
+    <section id="library" class="space-y-12 pt-12 border-t border-slate-200 dark:border-slate-800">
+      <div class="text-center max-w-3xl mx-auto space-y-3">
+        <h2 class="text-3xl md:text-4xl font-black text-slate-900 dark:text-white">Enterprise Creator Editorial Panels</h2>
+        <p class="text-sm text-slate-500">Klik pada salah satu panel di bawah ini untuk membaca masterclass mendalam secara instan.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+"""
+
+# Daftar 12 Panel Masterclass Interaktif
+panels = [
+    ("The Ultimate 2026 Guide to AI Video Repurposing", "Masterclass #1", "Turn 1-hour recordings into 10+ viral shorts automatically with AI framing."),
+    ("Why Manual Video Editing is Dead in 2026", "Masterclass #2", "How generative algorithms save creators over 30 hours of post-production every month."),
+    ("Mastering the First 3 Seconds with AI Hooks", "Masterclass #3", "Discover how machine learning isolates optimal retention hooks for TikTok and Reels."),
+    ("The Complete Content Multiplier Strategy", "Masterclass #4", "Scale a single podcast session across 5 major social media channels effortlessly."),
+    ("Maximizing AdSense & Affiliate Revenue", "Masterclass #5", "Combine programmatic display banners with high-ticket SaaS partner links for maximum yield."),
+    ("Active Speaker Tracking vs Traditional Cropping", "Masterclass #6", "Why AI vertical framing outperforms static cropping in modern social feeds."),
+    ("Top 10 Video Automation Trends for Creators", "Masterclass #7", "Stay ahead of the curve with cutting-edge creator economy workflows."),
+    ("Competing with Full-Scale Media Teams", "Masterclass #8", "How solo operators leverage AI tools to match enterprise production output."),
+    ("Demystifying Viral Algorithms on Shorts", "Masterclass #9", "Core metrics and engagement signals that push AI-generated clips to millions of views."),
+    ("The Economics of Content Repurposing ROI", "Masterclass #10", "Financial breakdown and cost-benefit analysis for digital agencies."),
+    ("Scaling Educational Channel Growth", "Masterclass #11", "Turn long educational lectures into bite-sized engagement magnets."),
+    ("Building a Passive Income Funnel", "Masterclass #12", "Combine free utility landing pages with automated software affiliate offers.")
+]
+
+for idx, (title, badge, desc) in enumerate(panels, start=1):
+    full_text = f"""
+      <h3 class='text-xl font-bold mb-3'>{title}</h3>
+      <p>In the fiercely competitive digital ecosystem of 2026, content distribution velocity dictates digital dominance. Creators, podcasters, educators, and enterprise marketing teams spend valuable hours recording high-value long-form sessions, only to witness audience retention decline sharply after the introductory segment.</p>
+      <p>Manually scrubbing through a 60-minute recording, identifying engaging excerpts, re-framing landscape video into vertical 9:16 aspect ratios, and adding kinetic subtitles takes an exhausting 4 to 6 hours per session. For solo operators, this bottleneck kills publishing consistency.</p>
+      <h3 class='text-lg font-bold mt-4 mb-2'>Workflow Automation with Opus Clip</h3>
+      <p>Among leading automation tools, <a href='https://opus.pro/?via=izyathulkhusna' class='text-indigo-600 underline' target='_blank'>Opus Clip AI</a> stands out as the industry standard for generative video repurposing. By leveraging machine learning models, Opus Clip evaluates transcripts, scores predicted viral potential, and exports ready-to-publish clips instantly.</p>
+      <ul class='list-disc pl-5 space-y-2 mt-3'>
+        <li><strong>AI Curation:</strong> Identifies highlight-worthy moments automatically.</li>
+        <li><strong>Active Speaker Tracking:</strong> Keeps faces centered in vertical 9:16 frames.</li>
+        <li><strong>Kinetic Subtitles:</strong> Automatically generates engagement-boosting captions.</li>
+      </ul>
+      <p class='mt-4'>Ready to revolutionize your production pipeline? Explore <a href='https://opus.pro/?via=izyathulkhusna' class='text-indigo-600 underline font-bold' target='_blank'>Opus Clip AI</a> today to start turning long-form archives into short-form gold.</p>
+    """
+    # Escape kutip untuk dimasukkan ke fungsi JS
+    escaped_text = full_text.replace('"', '&quot;').replace("'", "\\'")
+
+    articles_body = f"""
+        <div class="pastel-card p-6 rounded-3xl flex flex-col justify-between space-y-4 hover:scale-[1.02] transition cursor-pointer" onclick="openModal('{title}', '{badge}', '{escaped_text}')">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-indigo-50 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400 border border-indigo-100 dark:border-indigo-900">{badge}</span>
+              <span class="text-xs text-slate-400 font-semibold">1,200+ Words</span>
+            </div>
+            <h3 class="text-lg font-black text-slate-800 dark:text-white leading-snug mb-2">{title}</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-300 line-clamp-3">{desc}</p>
+          </div>
+          <div class="pt-4 border-t border-slate-200 dark:border-slate-700 flex items-center justify-between">
+            <span class="text-xs font-extrabold text-indigo-600 dark:text-indigo-400 hover:underline flex items-center gap-1">
+              Read Panel Masterclass →
+            </span>
+            <span class="text-xs font-bold bg-indigo-600 text-white px-3 py-1.5 rounded-lg shadow-md">Open Panel</span>
+          </div>
+        </div>
+    """
+    html_head += articles_body
+
+html_footer = """
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL POPUP FOR FULL ARTICLE READING -->
+  <div id="articleModal" class="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/60 backdrop-blur-sm hidden p-4">
+    <div class="pastel-card w-full max-w-3xl max-h-[85vh] overflow-y-auto rounded-3xl p-6 md:p-8 space-y-6 relative shadow-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700">
+      <div class="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 pb-4">
+        <span id="modalBadge" class="px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-indigo-600 text-white">Badge</span>
+        <button onclick="closeModal()" class="text-slate-400 hover:text-slate-600 dark:hover:text-white text-xl font-black px-3 py-1 rounded-xl bg-slate-100 dark:bg-slate-800">✕</button>
+      </div>
+      <h2 id="modalTitle" class="text-2xl md:text-3xl font-black text-slate-900 dark:text-white leading-tight">Title</h2>
+      <div id="modalBody" class="modal-content space-y-4 text-slate-700 dark:text-slate-300"></div>
+      <div class="pt-6 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between">
+        <a href="https://opus.pro/?via=izyathulkhusna" target="_blank" rel="nofollow noopener" class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-extrabold text-xs px-6 py-3.5 rounded-xl shadow-lg">
+          Try Opus Clip AI Free →
+        </a>
+        <button onclick="closeModal()" class="text-xs font-bold text-slate-500 hover:underline">Close Panel</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="border-t border-slate-200 dark:border-slate-800 bg-white/85 dark:bg-slate-900/90 py-10 text-center text-xs text-slate-500 mt-20">
+    <div class="max-w-7xl mx-auto px-6 space-y-3">
+      <p>© 2026 OmniShorts AI Suite. All rights reserved. Built for enterprise digital creators and marketers.</p>
+      <div class="flex justify-center gap-6 font-semibold">
+        <a href="#library" class="hover:underline">Editorial Panels</a>
+        <a href="https://opus.pro/?via=izyathulkhusna" target="_blank" rel="nofollow noopener" class="hover:underline">Opus Clip AI</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    let myChart = null;
+
+    function toggleDarkMode() {
+      document.documentElement.classList.toggle('dark');
+      document.getElementById('themeIcon').innerText = document.documentElement.classList.contains('dark') ? '☀️' : '🌙';
+    }
+
+    function openModal(title, badge, content) {
+      document.getElementById('modalTitle').innerText = title;
+      document.getElementById('modalBadge').innerText = badge;
+      document.getElementById('modalBody').innerHTML = content;
+      document.getElementById('articleModal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      document.getElementById('articleModal').classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+
+    function calculateROI() {
+      let count = parseFloat(document.getElementById('vidCount').value) || 0;
+      let hours = parseFloat(document.getElementById('vidHours').value) || 0;
+      let rate = parseFloat(document.getElementById('hourlyRate').value) || 0;
+
+      let totalManualHours = count * hours * 3;
+      let aiHours = totalManualHours * 0.1;
+      let hoursSaved = totalManualHours - aiHours;
+      let moneySaved = hoursSaved * rate;
+
+      document.getElementById('resultTotal').innerText = '$' + Math.round(moneySaved).toLocaleString() + ' Saved';
+      drawChart(Math.round(totalManualHours), Math.round(aiHours));
+    }
+
+    function drawChart(manual, ai) {
+      if (myChart) myChart.destroy();
+      const ctx = document.getElementById('roiChart').getContext('2d');
+      const isDark = document.documentElement.classList.contains('dark');
+      const textColor = isDark ? '#94a3b8' : '#64748b';
+
+      myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['Manual Workflow (Hours)', 'AI Automated (Hours)'],
+          datasets: [{
+            label: 'Hours Spent / Month',
+            data: [manual, ai],
+            backgroundColor: ['#f43f5e', '#6366f1'],
+            borderRadius: 6
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { display: false } },
+          scales: {
+            x: { grid: { display: false }, ticks: { color: textColor } },
+            y: { grid: { color: isDark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)' }, beginAtZero: true, ticks: { color: textColor } }
+          }
+        }
+      });
+    }
+
+    calculateROI();
+  </script>
+</body>
+</html>
+"""
+
+full_code = html_head + html_footer
+
+with open("index.html", "w", encoding="utf-8") as f:
+    f.write(full_code)
+
+print(f"BERHASIL: index.html dengan panel interaktif berhasil dibuat (Total {len(full_code.splitlines())} baris)!")
